@@ -1,0 +1,32 @@
+//peremennye
+@import './variables/variables';
+
+//visually-hidden
+@import './utils/visually-hidden';
+
+//base styles
+@import './base/base';
+
+//components
+@import './components/btn';
+@import './components/container';
+@import './base/common';
+@import './components/logo';
+@import './components/header-logo';
+@import './components/header';
+@import './components/header-contact';
+@import './components/hero';
+@import './components/benefits';
+@import './components/about';
+@import './components/team';
+@import './components/team-social';
+@import './components/social-icon';
+@import './components/client';
+@import './components/client-icon';
+@import './components/btn-portfolio';
+@import './components/work';
+@import './components/work-overlay';
+@import './components/footer';
+@import './components/footer-logo';
+@import './components/footer-mailing';
+@import './components/form/module';

@@ -1,0 +1,31 @@
+.checkbox {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+
+    /*position: absolute;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;*/
+}
+
+.icon-mark {
+    margin-right: 7px;
+    border: 1.2px solid var(--title-txt-cl);
+    border-radius: 2px;
+
+    fill: var(--accent-txt-cl);
+}
+
+.checkbox:checked + .icon-mark {
+    background-color: var(--secondary-txt-cl);
+    border-radius: 2px;
+    border-color: transparent;
+}

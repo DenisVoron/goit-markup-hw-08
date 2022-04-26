@@ -1,0 +1,32 @@
+/*ссылки соц.сети*/
+.social-list {
+    display: flex;
+    justify-content: center;
+}
+
+.social-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 44px;
+    height: 44px;
+
+    border-radius: 50px;
+    fill: var(--icon-color);
+
+    transition-property: background-color, fill;
+    transition-duration: var(--time-change);
+    transition-timing-function: var(--time-steps);
+    transition-delay: 100ms;
+
+    &:hover,
+    &:focus {
+        background-color: var(--secondary-txt-cl);
+        fill: var(--accent-txt-cl)
+    }
+}

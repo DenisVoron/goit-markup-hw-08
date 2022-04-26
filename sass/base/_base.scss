@@ -1,0 +1,25 @@
+@import './reset';
+
+.body {
+    font-family: var(--main-font);
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    background-color: var(--accent-txt-cl);
+
+    color: var(--primary-txt-cl);
+}
+
+.section {
+    padding: 94px 0px;
+}
+
+img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+.pointer {
+    cursor: pointer;
+}

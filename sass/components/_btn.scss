@@ -1,0 +1,94 @@
+/*главная кнопка*/
+.hero__btn {
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    margin-left: auto;
+    margin-right: auto;
+    padding: 8px 30px;
+
+    font-family: var(--main-font);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+
+    border-radius: 4px;
+    border: transparent;
+
+    letter-spacing: 0.06em;
+
+    color: var(--accent-txt-cl);
+    background-color: var(--secondary-txt-cl);
+}
+
+.work-btn {
+    border: transparent;
+    border-radius: 4px;
+    padding: 6px 22px;
+
+    font-family: var(--main-font);
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: var(--title-txt-cl);
+    background-color: var(--section-bg-cl);
+
+    transition-property: background-color, color, box-shadow;
+    transition-duration: var(--time-change);
+    transition-timing-function: var(--time-steps);
+    transition-delay: 100ms;
+
+    /*фокус-ховер кнопки фильтр*/
+    &:hover,
+    &:focus {
+        background-color: var(--secondary-txt-cl);
+        color: var(--accent-txt-cl);
+    
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+            0px 1px 2px rgba(0, 0, 0, 0.08),
+            0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
+}
+
+.mailing-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 200px;
+    height: 50px;
+
+    padding: 0px;
+
+    border: transparent;
+
+    background-color: var(--secondary-txt-cl);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+
+.mailing-txt {
+    margin-right: 10px;
+
+    font-family: var(--main-font);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+
+    letter-spacing: 0.06em;
+
+    color: var(--accent-txt-cl);
+}
+
+.mailing-icon {
+    width: 24px;
+    height: 24px;
+
+    fill: var(--accent-txt-cl);
+}

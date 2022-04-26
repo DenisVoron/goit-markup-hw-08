@@ -1,0 +1,14 @@
+/*кнопки фильтр*/
+.work-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+
+.work-item-btn:not(:last-child) {
+    margin-right: 8px;
+}
