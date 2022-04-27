@@ -4,8 +4,8 @@
     top: 50%;
     left: 50%;
 
-    width: 528px;
-    height: 581px;
+    width: 450px;
+    height: 609px;
 
     background-color: var(--accent-txt-cl);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -30,7 +30,7 @@
     font-family: var(--main-font);
     font-weight: 700;
     font-size: 20px;
-    line-height: 1.15;
+    line-height: 1.5;
     text-align: center;
     letter-spacing: 0.03em;
 
@@ -69,8 +69,8 @@
     box-sizing: border-box;
     border-radius: 4px;
 
-    &:focus+.icon-call,
-    &:focus {
+    &:focus + .icon-call,
+    &:hover {
         fill: var(--secondary-txt-cl);
         border-color: var(--secondary-txt-cl);
     }

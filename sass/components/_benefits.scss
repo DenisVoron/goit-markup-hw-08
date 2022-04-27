@@ -1,15 +1,7 @@
 /*оформлєння інфо-блок*/
 .benefits-list {
-    display: flex;
+    /*display: flex;*/
 
-    &__item {
-        flex-basis: calc(100% / 4);
-        margin-right: 30px;
-    }
-    
-    &__item:last-child {
-        margin-right: 0px;
-    }
 
     /*icon about*/
     &__container {
@@ -19,7 +11,7 @@
         align-items: center;
         margin-bottom: 30px;
     
-        width: 270px;
+        width: 450px;
         height: 120px;
     
         background: var(--section-bg-cl);
@@ -37,6 +29,8 @@
     
         font-size: 14px;
         line-height: 1.14;
+        text-align: center;
+        letter-spacing: 0.03em;
         text-transform: uppercase;
     }
     
@@ -44,5 +38,7 @@
     &__description {
         font-size: 14px;
         line-height: 1.71;
+        letter-spacing: 0.03em;
+        margin-bottom: 30px;
     }
 }

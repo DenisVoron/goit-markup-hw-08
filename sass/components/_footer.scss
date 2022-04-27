@@ -4,24 +4,17 @@
     padding-bottom: 60px;
 
     background-color: var(--main-bg-cl);
-
-    &-container {
-        display: flex;
-        align-items: baseline;
-    }
+    
 }
 
 .address-wrapper {
-    flex-grow: 1;
-
-    &:not(:last-child) {
-        margin-right: 70px;
-    }
-}
+    margin-left: auto;
+    margin-right: auto;
+}   
 
 /*соц мережі футер*/
 .join-wrapper {
-    margin-right: 93px;
+    margin-top: 60px;
 }
 
 .footer-title {
@@ -63,6 +56,7 @@
 //посилання соц мережі
 .join-list {
     display: flex;
+    margin-bottom: 60px;
 }
 
 .join-item:not(:last-child) {

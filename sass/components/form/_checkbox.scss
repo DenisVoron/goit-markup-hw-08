@@ -1,4 +1,4 @@
-.checkbox {
+.agreement-label__checkbox {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -16,7 +16,7 @@
     appearance: none;*/
 }
 
-.icon-mark {
+.agreement-label__icon {
     margin-right: 7px;
     border: 1.2px solid var(--title-txt-cl);
     border-radius: 2px;
@@ -24,8 +24,19 @@
     fill: var(--accent-txt-cl);
 }
 
-.checkbox:checked + .icon-mark {
+.agreement-label__checkbox:checked + .agreement-label__icon {
     background-color: var(--secondary-txt-cl);
     border-radius: 2px;
     border-color: transparent;
+}
+
+.agreement-label__txt {
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    
+    letter-spacing: 0.03em;
+    
+    color: var(--primary-txt-cl);
 }

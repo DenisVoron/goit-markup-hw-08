@@ -1,0 +1,38 @@
+.mailing-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 200px;
+    height: 50px;
+
+    padding: 0px;
+
+    border: transparent;
+
+    background-color: var(--secondary-txt-cl);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+}
+
+.mailing-txt {
+    margin-right: 10px;
+
+    font-family: var(--main-font);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+
+    letter-spacing: 0.06em;
+
+    color: var(--accent-txt-cl);
+
+}
+
+.mailing-icon {
+    width: 24px;
+    height: 24px;
+
+    fill: var(--accent-txt-cl);
+}

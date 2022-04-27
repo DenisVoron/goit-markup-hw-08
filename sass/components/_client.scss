@@ -2,17 +2,19 @@
 .client-title {
     margin-bottom: 50px;
     font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
+    font-size: 28px;
+    line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
 
     color: var(--title-txt-cl);
 }
 
+
 .client-list {
-    display: flex;
-    justify-content: center;
+    /*display: flex;
+    /*justify-content: center;*/
+    margin: -15px;
 }
 
 .client-link {
@@ -20,8 +22,9 @@
     align-items: center;
     justify-content: center;
 
-    width: 170px;
+    width: 210px;
     height: 92px;
+    margin: 15px;
 
     fill: var(--icon-color);
 
@@ -41,6 +44,6 @@
     }
 }
 
-.client-item:not(:last-child) {
-    margin-right: 30px;
+.client-item {
+    
 }

@@ -131,7 +131,7 @@
     </section>
 
     <!--блок работ-->
-    <section class="about section">
+    <section class="about section visually-hidden">
       <div class="container">
         <h2 class="about-title">Чем мы занимаемся</h2>
 
@@ -458,7 +458,7 @@
        <div class="form-group">
             <label class="label" for="name">Имя</label>
             <span class="input-wrapper">
-              <input type="text" class="call-input" name="name" id="name" />
+              <input type="text" class="call-input pointer" name="name" id="name" />
              <svg class="icon-call" width="12" height="12">
                <use href="./images/icon/sprite-all.svg#form-name"></use>
              </svg>
@@ -468,7 +468,7 @@
         <div class="form-group">
           <label class="label" for="tel">Телефон</label>
           <span class="input-wrapper">
-            <input type="tel" class="call-input" name="tel" id="tel" />
+            <input type="tel" class="call-input pointer" name="tel" id="tel" />
             <svg class="icon-call" width="13" height="13">
               <use href="./images/icon/sprite-all.svg#form-phone"></use>
             </svg>
@@ -478,7 +478,7 @@
         <div class="form-group">
           <label class="label" for="mail">Почта</label>
           <span class="input-wrapper">
-            <input type="email" class="call-input" name="mail" id="mail" />
+            <input type="email" class="call-input pointer" name="mail" id="mail" />
             <svg class="icon-call" width="15" height="12">
               <use href="./images/icon/sprite-all.svg#form-mail"></use>
             </svg>
@@ -486,7 +486,7 @@
         </div>
 
         <div class="form-comment">
-          <label class="label" for="comment">Комментарий</label>
+          <label class="label pointer" for="comment">Комментарий</label>
           <textarea 
           name="comment" 
           id="comment" rows="10" 
@@ -495,11 +495,13 @@
 
         <div class="agreement">
           <label class="agreement-label" for="agreement">
-            <input class="checkbox" type="checkbox" name="agreement" id="agreement" />
-            <svg class="icon-mark" width="16" height="15">
+            <input class="agreement-label__checkbox" type="checkbox" name="agreement" id="agreement" />
+            <svg class="agreement-label__icon pointer" width="16" height="15">
               <use href="./images/icon/sprite-all.svg#form-mark"></use>
             </svg>
+            <span class="agreement-label__txt">
             Соглашаюсь с рассылкой и принимаю<a href="">Условия договора</a>
+            </span>
           </label>
         </div>
 
