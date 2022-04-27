@@ -53,13 +53,14 @@ p {
   margin-bottom: 0;
 }
 
-/*h1:last-child,
+h1:last-child,
 h2:last-child,
 h3:last-child,
 h4:last-child,
 p {
-    margin-bottom: 0;
-}*/
+  margin-bottom: 0;
+}
+
 /*сброс списков*/
 ul {
   padding-left: 0;
@@ -119,7 +120,18 @@ img {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  /*width: 1200px;*/
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
 }
 
 /*общий блок подзаголовков*/
@@ -146,7 +158,7 @@ img {
 
 /*header logo*/
 .header__logo {
-  margin-right: 93px;
+  margin-right: 88px;
 }
 
 .logo-accent {
@@ -161,10 +173,18 @@ img {
   top: 0;
   left: 0;
   width: 100%;
-  height: 120px;
+  min-height: 60px;
   border-bottom: 1px solid var(--top-border-cl);
   background-color: var(--accent-txt-cl);
   /*header навигация*/
+}
+
+@media screen and (min-width: 768px) {
+  .header__container {
+    display: flex;
+    align-items: center;
+    min-height: 80px;
+  }
 }
 
 .header__nav {
@@ -172,10 +192,41 @@ img {
   align-items: center;
 }
 
+@media screen and (min-width: 768px) {
+  .nav-list {
+    display: flex;
+  }
+}
+
+.nav-list .nav-list__item {
+  position: relative;
+  margin-right: 50px;
+}
+
+.nav-list .nav-list__item:last-child {
+  margin-right: 0;
+}
+
+.contact-list {
+  /*display: flex;
+    align-items: center;
+    margin-left: auto;*/
+}
+
+.contact-list__item:first-child {
+  margin-left: 84px;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-list {
+    /*display: flex;*/
+  }
+}
+
 /*блок герой*/
 .hero {
-  /*max-width: 1600px;*/
-  height: 400px;
+  min-width: 480px;
+  max-height: 400px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 118px;
@@ -228,6 +279,7 @@ img {
 }
 
 .benefits-list__title {
+  min-width: 480px;
   margin-bottom: 10px;
   font-size: 14px;
   line-height: 1.14;
@@ -245,6 +297,7 @@ img {
 
 /*секция команда*/
 .team {
+  min-width: 480px;
   padding-top: 0px;
   background-color: var(--section-bg-cl);
 }
@@ -339,8 +392,8 @@ img {
 }
 
 .client-list {
-  /*display: flex;
-    /*justify-content: center;*/
+  display: flex;
+  flex-wrap: wrap;
   margin: -15px;
 }
 
@@ -374,15 +427,44 @@ img {
 /*кнопки фильтр*/
 .work-list {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-wrap: wrap;
+  /*align-items: center;*/
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 .work-item-btn:not(:last-child) {
   margin-right: 8px;
+}
+
+.work-item-btn:nth-child(-n + 3) {
+  margin-bottom: 15px;
+}
+
+.work-btn {
+  border: transparent;
+  border-radius: 4px;
+  padding: 6px 22px;
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-txt-cl);
+  background-color: var(--section-bg-cl);
+  transition-property: background-color, color, box-shadow;
+  transition-duration: var(--time-change);
+  transition-timing-function: var(--time-steps);
+  transition-delay: 100ms;
+  /*фокус-ховер кнопки фильтр*/
+}
+
+.work-btn:hover, .work-btn:focus {
+  background-color: var(--secondary-txt-cl);
+  color: var(--accent-txt-cl);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .work-list-pic {
@@ -472,18 +554,22 @@ img {
 
 /*футер*/
 .footer {
+  display: block;
+  min-width: 480px;
+  max-height: 603px;
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--main-bg-cl);
 }
 
 .address-wrapper {
-  margin-left: auto;
-  margin-right: auto;
+  /*margin-left: auto;
+    margin-right: auto;*/
 }
 
 /*соц мережі футер*/
 .join-wrapper {
+  text-align: center;
   margin-top: 60px;
 }
 
@@ -505,6 +591,8 @@ img {
 }
 
 .address-item .address-link {
+  display: block;
+  text-align: center;
   font-family: var(--main-font);
   font-style: normal;
   font-weight: 400;
@@ -515,12 +603,15 @@ img {
 }
 
 .address-link-contact {
+  display: block;
+  text-align: center;
   font-style: normal;
   color: var(--footer-txt-cl);
 }
 
 .join-list {
   display: flex;
+  justify-content: center;
   margin-bottom: 60px;
 }
 
@@ -553,6 +644,7 @@ img {
 }
 
 .footer-logo {
+  display: block;
   font-family: var(--logo-font);
   font-weight: 700;
   font-size: 24px;
@@ -571,6 +663,8 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
   width: 200px;
   height: 50px;
   padding: 0px;
@@ -604,6 +698,7 @@ img {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+  text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--accent-txt-cl);
@@ -663,7 +758,7 @@ img {
 .modal {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 48%;
   width: 450px;
   height: 609px;
   background-color: var(--accent-txt-cl);

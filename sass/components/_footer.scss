@@ -1,5 +1,8 @@
 /*футер*/
 .footer {
+    display: block;
+    min-width: 480px;
+    max-height: 603px;
     padding-top: 60px;
     padding-bottom: 60px;
 
@@ -8,12 +11,14 @@
 }
 
 .address-wrapper {
-    margin-left: auto;
-    margin-right: auto;
+    /*margin-left: auto;
+    margin-right: auto;*/
 }   
 
 /*соц мережі футер*/
 .join-wrapper {
+    text-align: center;
+
     margin-top: 60px;
 }
 
@@ -36,6 +41,9 @@
     }
     
     & .address-link {
+        display: block;
+        text-align: center;
+
         font-family: var(--main-font);
         font-style: normal;
         font-weight: 400;
@@ -49,6 +57,9 @@
 }
 
 .address-link-contact {
+    display: block;
+    text-align: center;
+
     font-style: normal;
     color: var(--footer-txt-cl);
 }
@@ -56,6 +67,8 @@
 //посилання соц мережі
 .join-list {
     display: flex;
+    justify-content: center;
+
     margin-bottom: 60px;
 }
 

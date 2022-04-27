@@ -40,25 +40,6 @@ background-position: center;
 
 header logo
 
-//.nav-list {
-display: flex;
-}
-
-&\_\_container {
-display: flex;
-}
-
-.nav-list\_\_item {
-position: relative;
-
-    margin-right: 50px;
-
-    &:last-child {
-        margin-right: 0;
-    }
-
-}
-
 .nav-list\_\_link {
 display: block;
 padding: 32px 0px;
@@ -93,41 +74,6 @@ padding: 32px 0px;
 
         background: var(--secondary-txt-cl);
         border-radius: 2px;
-    }
-
-}
-
-/\*.work-btn {
-border: transparent;
-border-radius: 4px;
-padding: 6px 22px;
-
-    font-family: var(--main-font);
-
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.62;
-
-    text-align: center;
-    letter-spacing: 0.03em;
-
-    color: var(--title-txt-cl);
-    background-color: var(--section-bg-cl);
-
-    transition-property: background-color, color, box-shadow;
-    transition-duration: var(--time-change);
-    transition-timing-function: var(--time-steps);
-    transition-delay: 100ms;
-
-    /*фокус-ховер кнопки фильтр
-    &:hover,
-    &:focus {
-        background-color: var(--secondary-txt-cl);
-        color: var(--accent-txt-cl);
-
-        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
-            0px 1px 2px rgba(0, 0, 0, 0.08),
-            0px 2px 2px rgba(0, 0, 0, 0.12);
     }
 
 }
