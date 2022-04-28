@@ -1,7 +1,17 @@
 /*оформлєння інфо-блок*/
 .benefits-list {
-    /*display: flex;*/
-
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -15px;
+    }
+    
+    &__item {
+        @media screen and (min-width: $tablet) {
+            width: 354px;
+            margin: 15px;
+        }
+    }
 
     /*icon about*/
     &__container {
@@ -16,6 +26,11 @@
     
         background: var(--section-bg-cl);
         border-radius: 4px;
+
+        @media screen and (min-width: $tablet) {
+            width: 354px;
+            height: 120px;
+        }
     }
     
     &__icon {
@@ -33,6 +48,9 @@
         text-align: center;
         letter-spacing: 0.03em;
         text-transform: uppercase;
+        @media screen and (min-width: $tablet){
+            text-align: left;
+        }
     }
     
     /*стили для блок описания*/

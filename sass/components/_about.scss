@@ -1,32 +1,25 @@
 //секція о нас
-.about-title {
-    margin-bottom: 50px;
-
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
-    letter-spacing: 0.03em;
-
-    color: var(--title-txt-cl);
-}
 .about {
     padding-top: 0px;
 
-    &-list {
-        display: flex;
+    @media screen and (min-width: $tablet) {
+        display: none;
     }
-    
+}
+
+.about-list {
+    display: flex;
+
     /*мітка о нас*/
-    &-item {
+    &__item {
         position: relative;
     }
     
-    &-item:not(:last-child) {
+    &__item:not(:last-child) {
         margin-right: 30px;
     }
     
-    &-label {
+    &__label {
         position: absolute;
     
         display: flex;
@@ -48,4 +41,16 @@
         color: var(--accent-txt-cl);
         background-color: var(--about-element-cl);
     }
+}
+
+.about-title {
+    margin-bottom: 50px;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: var(--title-txt-cl);
 }

@@ -1,4 +1,4 @@
-.thumb-work {
+.list-pic__thumb {
     position: relative;
     overflow: hidden;
 }
@@ -19,12 +19,12 @@
     background: var(--overlay-color);
 }
 
-.work-link:hover .overlay-thumb,
-.work-link:focus .overlay-thumb {
+.list-pic__link:hover .overlay-thumb,
+.list-pic__link:focus .overlay-thumb {
     transform: translateY(0);
 }
 
-.overlay-txt {
+.overlay-thumb__txt {
     font-family: var(--main-font);
     font-weight: 400;
     font-size: 18px;

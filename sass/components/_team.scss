@@ -1,10 +1,12 @@
 /*секция команда*/
 .team {
     min-width: 480px;
-    
     padding-top: 0px;
 
     background-color: var(--section-bg-cl);
+    @media screen and (min-width: $tablet) {
+        
+    }
 }
 
 .team-title {
@@ -17,9 +19,19 @@
     letter-spacing: 0.03em;
 
     color: var(--title-txt-cl);
+    @media screen and (min-width: $tablet) {
+        margin-bottom: 30px;
+    }
 }
+.team-list {
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        flex-wrap: wrap;
 
-.team-item {
+        margin: -15px;
+    }
+}
+.team-list__item {
     background-color: var(--accent-txt-cl);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -28,14 +40,24 @@
     &:not(:last-child) {
         margin-bottom: 30px;
     }
+    
+    @media screen and (min-width: $tablet) {
+        width: 354px;
+        margin: 15px;
+    }
 }
 
-.team-wrapper {
+.team-list__wrapper {
     padding-top: 30px;
     padding-bottom: 30px;
+
+    @media screen and (min-width: $tablet) {
+        padding-bottom: 24px;
+    }
+
 }
 
-.name-title {
+.team-list__title {
     margin-bottom: 10px;
 
     font-weight: 500;
@@ -48,7 +70,7 @@
     color: var(--title-txt-cl);
 }
 
-.team-descr {
+.team-list__descr {
     margin-bottom: 16px;
     font-weight: 400;
     font-size: 16px;

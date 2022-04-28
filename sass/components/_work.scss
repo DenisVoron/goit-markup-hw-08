@@ -1,20 +1,27 @@
 //секція робіт
-.work-list-pic {
-    /*display: flex;*/
-    /*flex-wrap: wrap;*/
+.list-pic {
+    @media screen and (min-width: $tablet) {
+       display: flex;
+       flex-wrap: wrap;
 
+       margin: -15px;
+    }
 
-    /*margin-top: 0px;*/
-    /*padding-left: 0px;*/
-}
-
-.work-item-pic {
-    &:not(:last-child) {
-        margin-bottom: 30px;
+    &__item {
+        @media screen and (max-width: $tabletSecondary) {
+            &:not(:last-child) {
+                margin-bottom: 30px;
+            }
+        }
+    
+        @media screen and (min-width: $tablet) {
+            /*width: 354px;*/
+            flex-basis: calc((100% - 2 * 30px) / 2);
+            margin: 15px;
+        }
     }
 }
-
-.work-link {
+.list-pic__link {
     display: block;
 
     transition-property: box-shadow;
@@ -31,7 +38,8 @@
 }
 
 .work-text-wrapper {
-    width: 370px;
+    height: 100%;
+
     padding-top: 20px;
     padding-right: 24px;
     padding-bottom: 20px;

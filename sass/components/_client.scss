@@ -25,7 +25,6 @@
 
     width: 210px;
     height: 92px;
-    margin: 15px;
 
     fill: var(--icon-color);
 
@@ -38,6 +37,10 @@
     transition-timing-function: var(--time-steps);
     transition-delay: 100ms;
 
+    @media screen and (min-width: $tablet) {
+        width: 226px;
+    }
+
     &:hover,
     &:focus {
         fill: var(--secondary-txt-cl);
@@ -46,5 +49,5 @@
 }
 
 .client-item {
-    
+    margin: 15px;
 }

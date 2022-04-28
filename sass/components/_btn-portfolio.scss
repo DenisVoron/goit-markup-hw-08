@@ -1,12 +1,19 @@
 /*кнопки фильтр*/
 .work-list {
     display: flex;
-    flex-wrap: wrap;
-    /*align-items: center;*/
 
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 40px;
+
+    @media screen and (max-width: $tabletSecondary) {
+        flex-wrap: wrap;
+    }
+
+    @media screen and (min-width: $tablet) {
+        justify-content: center;
+    }
+
 }
 
 .work-item-btn:not(:last-child) {

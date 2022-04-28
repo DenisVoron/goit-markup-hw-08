@@ -4,6 +4,9 @@
 
 # goit-markup-hw-02
 
+формула расчета сетки элементов
+flex-basis: calc((100% - количество маржинов в строке\*значение маржина) / количество элементов в строке);
+
 Присвоение стилей css
 
 доп шрифт
@@ -39,44 +42,6 @@ background-position: center;
 }
 
 header logo
-
-.nav-list\_\_link {
-display: block;
-padding: 32px 0px;
-
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-
-    color: var(--title-txt-cl);
-
-    transition-property: color;
-    transition-duration: var(--time-change);
-    transition-timing-function: var(--time-steps);
-    transition-delay: 100ms;
-
-    &:hover,
-    &:focus {
-        color: var(--secondary-txt-cl);
-    }
-
-    &--current::after {
-        content: '';
-
-        position: absolute;
-        left: 0px;
-        bottom: 0px;
-
-        display: block;
-        width: 100%;
-        height: 4px;
-
-        background: var(--secondary-txt-cl);
-        border-radius: 2px;
-    }
-
-}
 
 &\_\_item {
 flex-basis: calc(100% / 4);

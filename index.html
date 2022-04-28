@@ -46,7 +46,7 @@
         <ul class="contact-list">
             <li class="contact-list__item">
                 <a class="contact-link link" href="mailto:info@devstudio.com">
-                  <svg class="contact-link__icon" width="16" height="12">
+                  <svg class="contact-link__icon--mail" width="" height="">
                     <use href="./images/icon/sprite-all.svg#icon-mail-envelope"></use>
                   </svg>
                   info@devstudio.com
@@ -54,7 +54,7 @@
             </li>
             <li class="contact-list__item">
                 <a class="contact-link link" href="tel:+380961111111">
-                  <svg class="contact-link__icon" width="10" height="16">
+                  <svg class="contact-link__icon--phon" width="" height="">
                     <use href="./images/icon/sprite-all.svg#icon-smartphone"></use>
                   </svg>  
                   +38 096 111 11 11
@@ -131,27 +131,27 @@
     </section>
 
     <!--блок работ-->
-    <section class="about section visually-hidden">
+    <section class="about section">
       <div class="container">
         <h2 class="about-title">Чем мы занимаемся</h2>
 
             <ul class="about-list">
-                <li class="about-item">
-                  <div class="about-thumb">
-                    <img class="about-pic" src="./images/work/box-1.jpg" alt="Веб верстка проектов" width="370" />
-                    <p class="about-label">Десктопные приложения</p>
+                <li class="about-list__item">
+                  <div class="about-list__thumb">
+                    <img class="about-list__pic" src="./images/work/box-1.jpg" alt="Веб верстка проектов" width="370" />
+                    <p class="about-list__label">Десктопные приложения</p>
                   </div>
                 </li>
-                <li class="about-item">
-                  <div class="about-thumb">
-                    <img class="about-pic" src="./images/work/box-2.jpg" alt="Разработка мобильных приложений" width="370" />
-                    <p class="about-label">Мобильные приложения</p>
+                <li class="about-list__item">
+                  <div class="about-list__thumb">
+                    <img class="about-list__pic" src="./images/work/box-2.jpg" alt="Разработка мобильных приложений" width="370" />
+                    <p class="about-list__label">Мобильные приложения</p>
                   </div>
                 </li>
-                <li class="about-item">
-                  <div class="about-thumb">
-                    <img class="about-pic" src="./images/work/box-3.jpg" alt="Веб дизайн" width="370" />
-                    <p class="about-label">Дизайнерские решения</p>
+                <li class="about-list__item">
+                  <div class="about-list__thumb">
+                    <img class="about-list__pic" src="./images/work/box-3.jpg" alt="Веб дизайн" width="370" />
+                    <p class="about-list__label">Дизайнерские решения</p>
                   </div>
                 </li>
             </ul>
@@ -164,11 +164,11 @@
         <h2 class="team-title">Наша команда</h2>
         
           <ul class="team-list">
-            <li class="team-item">
-              <img class="team-pic" src="./images/team/team-card-1.jpg" alt="Демьяненко" width="270" />
-             <div class="team-wrapper">
-                <h3 class="name-title">Игорь Демьяненко</h3>
-                <p class="team-descr" lang="en">Product Designer</p>
+            <li class="team-list__item">
+              <img class="team-list__pic" src="./images/team/team-card-1.jpg" alt="Демьяненко"/>
+             <div class="team-list__wrapper">
+                <h3 class="team-list__title">Игорь Демьяненко</h3>
+                <p class="team-list__descr" lang="en">Product Designer</p>
                 <ul class="social-list">
                   <li class="social-item">
                     <a class="social-link" href="" aria-label="instagram">
@@ -201,11 +201,11 @@
                 </ul>
              </div>
             </li>
-            <li class="team-item">
-              <img class="team-pic" src="./images/team/team-card-2.jpg" alt="Репина" width="270" />
-             <div class="team-wrapper">
-                <h3 class="name-title">Ольга Репина</h3>
-                <p class="team-descr" lang="en">Frontend Developer</p>
+            <li class="team-list__item">
+              <img class="team-list__pic" src="./images/team/team-card-2.jpg" alt="Репина"/>
+             <div class="team-list__wrapper">
+                <h3 class="team-list__title">Ольга Репина</h3>
+                <p class="team-list__descr" lang="en">Frontend Developer</p>
                 <ul class="social-list">
                   <li class="social-item">
                     <a class="social-link" href="" aria-label="instagram">
@@ -238,11 +238,11 @@
                 </ul>
              </div>
             </li>
-            <li class="team-item">
-              <img class="team-pic" src="./images/team/team-card-3.jpg" alt="Тарасов" width="270" />
-             <div class="team-wrapper">
-                <h3 class="name-title">Николай Тарасов</h3>
-                <p class="team-descr" lang="en">Marketing</p>
+            <li class="team-list__item">
+              <img class="team-list__pic" src="./images/team/team-card-3.jpg" alt="Тарасов"/>
+             <div class="team-list__wrapper">
+                <h3 class="team-list__title">Николай Тарасов</h3>
+                <p class="team-list__descr" lang="en">Marketing</p>
                 <ul class="social-list">
                   <li class="social-item">
                     <a class="social-link" href="" aria-label="instagram">
@@ -275,11 +275,11 @@
                 </ul>
              </div>
             </li>
-            <li class="team-item">
-              <img class="team-pic" src="./images/team/team-card-4.jpg" alt="Ермаков" width="270" />
-             <div class="team-wrapper">
-                <h3 class="name-title">Михаил Ермаков</h3>
-                <p class="team-descr" lang="en">UI Designer</p>
+            <li class="team-list__item">
+              <img class="team-list__pic" src="./images/team/team-card-4.jpg" alt="Ермаков"/>
+             <div class="team-list__wrapper">
+                <h3 class="team-list__title">Михаил Ермаков</h3>
+                <p class="team-list__descr" lang="en">UI Designer</p>
                 <ul class="social-list">
                   <li class="social-item">
                     <a class="social-link" href="" aria-label="instagram">
@@ -371,64 +371,66 @@
     <!--футер-->   
     <footer class="footer">
         <div class="container footer-container">
-          <div class="address-wrapper">
-            <div class="container-logo">
-              <a class="footer-logo link" href="./index.html">
-                Web<span class="footer-logo-accent">Studio</span>
-              </a>
+          <div class="footer-container__position">
+            <div class="address-wrapper">
+              <div class="container-logo">
+                <a class="footer-logo link" href="./index.html">
+                  Web<span class="footer-logo-accent">Studio</span>
+                </a>
+              </div>
+            
+              <address class="address" id="contacts">
+                <ul class="address-list">
+                  <li class="address-item">
+                    <a class="address-link link" href="https://www.google.com/maps/@50.427001,30.5351555,16.5z" target="blank"
+                      rel="noopener noreferrer">
+                      г. Киев, пр-т Леси Украинки, 26
+                    </a>
+                  </li>
+                  <li class="address-item">
+                    <a class="address-link-contact link" href="mailto:info@example.com">info@example.com</a>
+                  </li>
+                  <li class="address-item">
+                    <a class="address-link-contact link" href="tel:+380991111111">+38 099 111 11 11</a>
+                  </li>
+                </ul>
+              </address>
             </div>
             
-            <address class="address" id="contacts">
-              <ul class="address-list">
-                <li class="address-item">
-                  <a class="address-link link" href="https://www.google.com/maps/@50.427001,30.5351555,16.5z" target="blank"
-                    rel="noopener noreferrer">
-                    г. Киев, пр-т Леси Украинки, 26
+            <div class="join-wrapper">
+              <h2 class="footer-title">присоединяйтесь</h2>
+            
+              <ul class="join-list">
+                <li class="join-item">
+                  <a class="footer-social-link" href="" aria-label="instagram">
+                    <svg class="social-icon">
+                      <use href="./images/icon/sprite-all.svg#icon-instagram"></use>
+                    </svg>
                   </a>
                 </li>
-                <li class="address-item">
-                  <a class="address-link-contact link" href="mailto:info@example.com">info@example.com</a>
+                <li class="join-item">
+                  <a class="footer-social-link" href="" aria-label="twitter">
+                    <svg class="social-icon">
+                      <use href="./images/icon/sprite-all.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
                 </li>
-                <li class="address-item">
-                  <a class="address-link-contact link" href="tel:+380991111111">+38 099 111 11 11</a>
+                <li class="join-item">
+                  <a class="footer-social-link" href="" aria-label="facebook">
+                    <svg class="social-icon">
+                      <use href="./images/icon/sprite-all.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="join-item">
+                  <a class="footer-social-link" href="" aria-label="linkedin">
+                    <svg class="social-icon">
+                      <use href="./images/icon/sprite-all.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
                 </li>
               </ul>
-            </address>
-          </div>
-
-          <div class="join-wrapper">
-            <h2 class="footer-title">присоединяйтесь</h2>
-
-            <ul class="join-list">
-              <li class="join-item">
-                <a class="footer-social-link" href="" aria-label="instagram">
-                  <svg class="social-icon">
-                    <use href="./images/icon/sprite-all.svg#icon-instagram"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="join-item">
-                <a class="footer-social-link" href="" aria-label="twitter">
-                  <svg class="social-icon">
-                    <use href="./images/icon/sprite-all.svg#icon-twitter"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="join-item">
-                <a class="footer-social-link" href="" aria-label="facebook">
-                  <svg class="social-icon">
-                    <use href="./images/icon/sprite-all.svg#icon-facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="join-item">
-                <a class="footer-social-link" href="" aria-label="linkedin">
-                  <svg class="social-icon">
-                    <use href="./images/icon/sprite-all.svg#icon-linkedin"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
+            </div>
           </div>
 
           <div class="mailing">

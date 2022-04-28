@@ -18,9 +18,19 @@
     &:focus {
         color: var(--secondary-txt-cl);
     }
-    
-    &__icon {
-        margin-right: 10px;
+
+    &__icon--mail {
+        margin-right: 8px;
         fill: currentColor;
+    
+        width: 14px;
+        height: 10px;
+    }
+    
+    &__icon--phon {
+        margin-right: 8px;
+        
+        width: 10px;
+        height: 14px;
     }
 }
