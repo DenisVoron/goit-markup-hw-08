@@ -2,7 +2,7 @@
 .about {
     padding-top: 0px;
 
-    @media screen and (min-width: $tablet) {
+    @media screen and (max-width: $desktopSecondary) {
         display: none;
     }
 }

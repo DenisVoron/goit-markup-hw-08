@@ -18,13 +18,15 @@
     margin: -15px;
 }
 
+.client-item {
+    flex-basis: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+}
+
 .client-link {
     display: flex;
     align-items: center;
     justify-content: center;
-
-    width: 210px;
-    height: 92px;
 
     fill: var(--icon-color);
 
@@ -46,8 +48,4 @@
         fill: var(--secondary-txt-cl);
         border: 1px solid var(--secondary-txt-cl);
     }
-}
-
-.client-item {
-    margin: 15px;
 }

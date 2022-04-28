@@ -395,7 +395,7 @@ img {
   padding-top: 0px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1140px) {
   .about {
     display: none;
   }
@@ -572,12 +572,15 @@ img {
   margin: -15px;
 }
 
+.client-item {
+  flex-basis: calc((100% - 4 * 15px) / 2);
+  margin: 15px;
+}
+
 .client-link {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 210px;
-  height: 92px;
   fill: var(--icon-color);
   border: 1px solid var(--icon-color);
   box-sizing: border-box;
@@ -597,10 +600,6 @@ img {
 .client-link:hover, .client-link:focus {
   fill: var(--secondary-txt-cl);
   border: 1px solid var(--secondary-txt-cl);
-}
-
-.client-item {
-  margin: 15px;
 }
 
 .client-icon {
