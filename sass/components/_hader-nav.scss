@@ -1,0 +1,107 @@
+.nav-container {
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        text-align: center;
+    }
+
+    @media screen and (max-width: $tabletSecondary) {
+        position: absolute;
+        
+        display: block;
+        
+        top: 100%;
+        left: 0%;
+        width: 100vh;
+        
+        padding: 10px 15px;
+        
+        background-color: var(--accent-txt-cl);
+        
+        &.is-open {
+            display: none;
+        }
+    }
+}
+
+//header nav
+.nav-list {
+    @media screen and (min-width: $tablet) {
+        display: flex;
+
+    }
+
+    &__item {
+        position: relative;
+
+        margin-right: 50px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__link {
+        display: block;
+        padding: 32px 0px;
+
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+
+        color: var(--title-txt-cl);
+
+        transition-property: color;
+        transition-duration: var(--time-change);
+        transition-timing-function: var(--time-steps);
+        transition-delay: 100ms;
+
+        &:hover,
+        &:focus {
+            color: var(--secondary-txt-cl);
+        }
+
+        &--current::after {
+            content: '';
+
+            position: absolute;
+            left: 0px;
+            bottom: 0px;
+
+            display: block;
+            width: 100%;
+            height: 4px;
+
+            background: var(--secondary-txt-cl);
+            border-radius: 2px;
+        }
+
+    }
+}
+
+.contact-list {
+    @media screen and (min-width: $desktop) {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+    }
+
+    @media screen and (min-width: $tablet) {
+        .contact-link {
+            font-family: var(--main-font);
+
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 1.17;
+            letter-spacing: 0.02em;
+        }
+    }
+
+
+    @media screen and (min-width: $tablet) {
+        &__item {
+            margin-left: 84px;
+            margin-bottom: 10px;
+        }
+    }
+}

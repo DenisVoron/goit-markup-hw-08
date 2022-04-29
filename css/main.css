@@ -158,39 +158,56 @@ img {
 }
 
 /*header logo*/
-.header__logo {
-  margin-right: 88px;
-}
-
 .logo-accent {
   letter-spacing: 0.03em;
   color: var(--title-txt-cl);
 }
 
-/*Header*/
-.header {
-  position: fixed;
-  z-index: 2;
-  top: 0;
-  left: 0;
-  width: 100%;
-  min-height: 60px;
-  border-bottom: 1px solid var(--top-border-cl);
-  background-color: var(--accent-txt-cl);
-  /*header навигация*/
-}
-
 @media screen and (min-width: 768px) {
-  .header__container {
-    display: flex;
-    align-items: center;
-    min-height: 80px;
+  .header-button {
+    display: none;
   }
 }
 
-.header__nav {
-  display: flex;
-  align-items: center;
+@media screen and (max-width: 767px) {
+  .header-button {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+  }
+  .header-button .header-button__cross {
+    display: none;
+  }
+  .header-button.is-active .header-button__menu {
+    display: none;
+  }
+  .header-button.is-active .header-button__cross {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .nav-container {
+    display: flex;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .nav-container {
+    position: absolute;
+    display: block;
+    top: 100%;
+    left: 0%;
+    width: 100vh;
+    padding: 10px 15px;
+    background-color: var(--accent-txt-cl);
+  }
+  .nav-container.is-open {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -238,10 +255,12 @@ img {
   border-radius: 2px;
 }
 
-.contact-list {
-  /*display: flex;
+@media screen and (min-width: 1200px) {
+  .contact-list {
+    display: flex;
     align-items: center;
-    margin-left: auto;*/
+    margin-left: auto;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -259,6 +278,43 @@ img {
     margin-left: 84px;
     margin-bottom: 10px;
   }
+}
+
+/*Header*/
+.header {
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-bottom: 1px solid var(--top-border-cl);
+  background-color: var(--accent-txt-cl);
+  /*header навигация*/
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    height: 60px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header__container {
+    position: relative;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header__container {
+    display: flex;
+    align-items: center;
+    min-height: 80px;
+  }
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
 }
 
 .contact-link {
@@ -295,21 +351,25 @@ img {
 /*блок герой*/
 .hero {
   min-width: 480px;
-  max-height: 400px;
+  min-height: 400px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 118px;
   padding-bottom: 118px;
-  /*background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../images/hero/hero-img.jpg);
-
-    background-repeat: no-repeat;
-    background-position: center;*/
   background-color: var(--main-bg-cl);
 }
 
+@media screen and (min-width: 1200px) {
+  .hero {
+    max-width: 1600px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-img.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
 .hero__title {
-  width: 360px;
+  max-width: 360px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
@@ -336,6 +396,10 @@ img {
     flex-wrap: wrap;
     margin: -15px;
   }
+}
+
+.benefits-list__item {
+  width: 450px;
 }
 
 @media screen and (min-width: 768px) {
@@ -369,7 +433,7 @@ img {
 }
 
 .benefits-list__title {
-  min-width: 480px;
+  min-width: 450px;
   margin-bottom: 10px;
   font-size: 14px;
   line-height: 1.14;
@@ -965,6 +1029,7 @@ img {
   width: 100%;
   height: 100%;
   background-color: var(--backdrop-cl);
+  overflow-y: scroll;
 }
 
 .backdrop.is-hidden {

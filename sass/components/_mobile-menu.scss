@@ -1,0 +1,27 @@
+//нав-кентейнер для пизиционироваия моб мен
+    .header-button {
+        @media screen and (min-width: $tablet) {
+            display: none;
+        }
+
+        @media screen and (max-width: $tabletSecondary) {
+            display: inline-flex;
+            
+            margin: 0;
+            padding: 0;
+            border: none;
+            background-color: transparent;
+            
+            & .header-button__cross {
+                display: none;
+            }
+            
+            &.is-active &__menu {
+                display: none;
+            }
+            
+            &.is-active &__cross {
+                display: block;
+            }
+      }
+    }
