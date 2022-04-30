@@ -116,7 +116,7 @@ img {
 }
 
 .container {
-  width: 100%;
+  max-width: 480px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -131,8 +131,14 @@ img {
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    max-width: 768px;
     margin-left: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
   }
 }
 
@@ -172,41 +178,154 @@ img {
 
 @media screen and (max-width: 767px) {
   .header-button {
+    position: relative;
+    z-index: 50;
     display: inline-flex;
-    margin: 0;
+    margin-left: auto;
+    width: 40px;
+    height: 40px;
     padding: 0;
     border: none;
     background-color: transparent;
   }
-  .header-button .header-button__cross {
+  .header-button .header-button__menu {
     display: none;
+  }
+  .header-button .header-button__cross {
+    display: block;
   }
   .header-button.is-active .header-button__menu {
-    display: none;
+    display: block;
   }
   .header-button.is-active .header-button__cross {
-    display: block;
+    display: none;
+  }
+  .header-button:hover, .header-button:focus {
+    fill: var(--secondary-txt-cl);
   }
 }
 
 @media screen and (min-width: 768px) {
-  .nav-container {
+  .mobile-container {
     display: flex;
     text-align: center;
   }
 }
 
 @media screen and (max-width: 767px) {
-  .nav-container {
-    position: absolute;
-    display: block;
-    top: 100%;
-    left: 0%;
-    width: 100vh;
-    padding: 10px 15px;
+  .mobile-container {
+    position: fixed;
+    z-index: 20;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 48px 40px;
     background-color: var(--accent-txt-cl);
   }
-  .nav-container.is-open {
+  .mobile-container.is-open {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .mobile-list__item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .mobile-list__link {
+    font-family: var(--main-font);
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: var(--title-txt-cl);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .mobile-group {
+    margin-top: auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .mobile-contact {
+    margin-bottom: 64px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .mobile-contact__item:nth-child(-n + 1) {
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .mobile-contact__link--color {
+    font-family: var(--main-font);
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+    color: var(--secondary-txt-cl);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .mobile-contact__link {
+    font-family: var(--main-font);
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: var(--primary-txt-cl);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .mobile-socials {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -10px;
+    margin-right: -10px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .mobile-socials__item {
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .mobile-socials__link {
+    display: block;
+    padding-right: 10px;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+    font-family: var(--main-font);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    color: var(--secondary-txt-cl);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .mobile-socials__item:last-child .mobile-socials__link {
+    padding: 0;
+    border: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .nav-list {
     display: none;
   }
 }
@@ -256,6 +375,12 @@ img {
   border-radius: 2px;
 }
 
+@media screen and (max-width: 767px) {
+  .contact-list {
+    display: none;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .contact-list {
     display: flex;
@@ -284,7 +409,7 @@ img {
 /*Header*/
 .header {
   position: fixed;
-  z-index: 99;
+  z-index: 2;
   top: 0;
   left: 0;
   width: 100%;

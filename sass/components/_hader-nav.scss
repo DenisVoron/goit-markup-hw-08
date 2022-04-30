@@ -1,30 +1,9 @@
-.nav-container {
-    @media screen and (min-width: $tablet) {
-        display: flex;
-        text-align: center;
-    }
-
-    @media screen and (max-width: $tabletSecondary) {
-        position: absolute;
-        
-        display: block;
-        
-        top: 100%;
-        left: 0%;
-        width: 100vh;
-        
-        padding: 10px 15px;
-        
-        background-color: var(--accent-txt-cl);
-        
-        &.is-open {
-            display: none;
-        }
-    }
-}
-
 //header nav
 .nav-list {
+    @media screen and (max-width: $tabletSecondary) {
+        display: none;
+    }
+
     @media screen and (min-width: $tablet) {
         display: flex;
 
@@ -80,6 +59,10 @@
 }
 
 .contact-list {
+    @media screen and (max-width: $tabletSecondary) {
+        display: none;
+    }
+
     @media screen and (min-width: $desktop) {
         display: flex;
         align-items: center;
