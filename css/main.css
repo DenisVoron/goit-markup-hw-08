@@ -607,6 +607,12 @@ img {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .about {
+    display: block;
+  }
+}
+
 .about-list {
   display: flex;
   /*мітка о нас*/

@@ -5,6 +5,10 @@
     @media screen and (max-width: $desktopSecondary) {
         display: none;
     }
+
+    @media screen and (min-width: $desktop) {
+        display: block;
+    }
 }
 
 .about-list {
