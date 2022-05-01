@@ -1,12 +1,30 @@
 .contact-list{
+    @media screen and (max-width: $tabletSecondary) {
+        display: none;
+    }
+
     @media screen and (min-width: $tablet) {
-        margin-left: auto;
+        margin-top: 21px;
+        margin-left: 84px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        display: flex;
     }
 }
+
+
+.contact-list__item:not(:last-child) {
+    @media screen and (min-width: $tablet) {
+        margin-bottom: 10px;
+    }
+}
+
 .contact-link {
     display: flex;
     align-items: center;
 
+    font-family: var(--main-font);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -19,9 +37,22 @@
     transition-timing-function: var(--time-steps);
     transition-delay: 100ms;
 
+    @media screen and (min-width: $tablet) {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.02em;
+    }
+
     &:hover,
     &:focus {
         color: var(--secondary-txt-cl);
+    }
+
+    &__item {
+        @media screen and (min-width: $tablet) {
+            margin-bottom: 10px;
+        }
     }
 
     &__icon--mail {
