@@ -56,3 +56,14 @@ margin-right: 30px;
 display: flex;
 align-items: baseline;
 }
+
+@media screen and (min-width: $tablet){
+width: 738px;
+}
+
+    @media screen and (min-width: $desktop) {
+        width: $desktopSecondary;
+
+        padding-left: 215px;
+        padding-right: 215px;
+    }

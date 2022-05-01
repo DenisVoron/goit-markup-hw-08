@@ -83,6 +83,7 @@ ul {
 }
 
 .section {
+  min-width: 480px;
   padding: 60px 0px;
 }
 
@@ -116,30 +117,11 @@ img {
 }
 
 .container {
-  max-width: 480px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-}
-
-@media screen and (min-width: 767px) {
-  .container {
-    width: 480px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-    margin-left: 0;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .container {
-    max-width: 1200px;
-  }
 }
 
 /*общий блок подзаголовков*/
@@ -164,9 +146,14 @@ img {
   color: var(--secondary-txt-cl);
 }
 
+@media screen and (min-width: 768px) {
+  .logo {
+    margin-right: 88px;
+  }
+}
+
 /*header logo*/
 .logo-accent {
-  letter-spacing: 0.03em;
   color: var(--title-txt-cl);
 }
 
@@ -181,7 +168,6 @@ img {
     position: relative;
     z-index: 50;
     display: inline-flex;
-    margin-left: auto;
     width: 40px;
     height: 40px;
     padding: 0;
@@ -207,8 +193,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .mobile-container {
-    display: flex;
-    text-align: center;
+    display: none;
   }
 }
 
@@ -218,7 +203,7 @@ img {
     z-index: 20;
     top: 0;
     left: 0;
-    width: 100vw;
+    width: 100vh;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -347,7 +332,6 @@ img {
 
 .nav-list__link {
   display: block;
-  padding: 32px 0px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -390,7 +374,7 @@ img {
 }
 
 @media screen and (min-width: 768px) {
-  .contact-list .contact-link {
+  .contact-link {
     font-family: var(--main-font);
     font-weight: 500;
     font-size: 12px;
@@ -400,8 +384,7 @@ img {
 }
 
 @media screen and (min-width: 768px) {
-  .contact-list__item {
-    margin-left: 84px;
+  .contact-link__item {
     margin-bottom: 10px;
   }
 }
@@ -412,35 +395,49 @@ img {
   z-index: 2;
   top: 0;
   left: 0;
+  padding-top: 16px;
+  padding-bottom: 16px;
   width: 100%;
+  height: 60px;
   border-bottom: 1px solid var(--top-border-cl);
   background-color: var(--accent-txt-cl);
   /*header навигация*/
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 768px) {
   .header {
-    height: 60px;
+    width: 100%;
+    height: 80px;
+    padding-top: 26px;
+    padding-bottom: 26px;
   }
 }
 
-@media screen and (max-width: 767px) {
-  .header__container {
-    position: relative;
-  }
+.header__container {
+  min-width: 480px;
 }
 
 @media screen and (min-width: 768px) {
   .header__container {
+    min-width: 768px;
     display: flex;
-    align-items: center;
-    min-height: 80px;
   }
 }
 
 .header__nav {
   display: flex;
-  align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .header__nav {
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contact-list {
+    margin-left: auto;
+  }
 }
 
 .contact-link {
@@ -477,12 +474,17 @@ img {
 /*блок герой*/
 .hero {
   min-width: 480px;
-  min-height: 400px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 118px;
   padding-bottom: 118px;
   background-color: var(--main-bg-cl);
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    min-width: 768px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -495,7 +497,7 @@ img {
 }
 
 .hero__title {
-  max-width: 360px;
+  width: 360px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
@@ -510,7 +512,20 @@ img {
 }
 
 /*оформлєння інфо-блок*/
+.benefits {
+  min-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .benefits {
+    min-width: 768px;
+  }
+}
+
 .benefits-list {
+  margin: -15px;
   /*icon about*/
   /*text about*/
   /*стили для блок описания*/
@@ -520,7 +535,6 @@ img {
   .benefits-list {
     display: flex;
     flex-wrap: wrap;
-    margin: -15px;
   }
 }
 
@@ -549,7 +563,6 @@ img {
 @media screen and (min-width: 768px) {
   .benefits-list__container {
     width: 354px;
-    height: 120px;
   }
 }
 
@@ -585,7 +598,7 @@ img {
   padding-top: 0px;
 }
 
-@media screen and (max-width: 1140px) {
+@media screen and (max-width: 1170px) {
   .about {
     display: none;
   }
@@ -636,8 +649,16 @@ img {
 /*секция команда*/
 .team {
   min-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 0px;
   background-color: var(--section-bg-cl);
+}
+
+@media screen and (min-width: 768px) {
+  .team {
+    min-width: 768px;
+  }
 }
 
 .team-title {
@@ -668,10 +689,6 @@ img {
   background-color: var(--accent-txt-cl);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-}
-
-.team-list__item:not(:last-child) {
-  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 768px) {
@@ -745,6 +762,10 @@ img {
   height: 20px;
 }
 
+.client {
+  min-width: 480px;
+}
+
 /*section client*/
 .client-title {
   margin-bottom: 50px;
@@ -759,6 +780,8 @@ img {
 .client-list {
   display: flex;
   flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
   margin: -15px;
 }
 
@@ -771,6 +794,8 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 210px;
+  height: 92px;
   fill: var(--icon-color);
   border: 1px solid var(--icon-color);
   box-sizing: border-box;
@@ -848,6 +873,12 @@ img {
   background-color: var(--secondary-txt-cl);
   color: var(--accent-txt-cl);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.list-pic {
+  width: 450px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -1106,10 +1137,6 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--accent-txt-cl);
-}
-
-.mailing-form {
-  /*display: flex;*/
 }
 
 .form-input {

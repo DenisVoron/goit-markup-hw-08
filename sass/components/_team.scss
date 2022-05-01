@@ -1,11 +1,16 @@
 /*секция команда*/
 .team {
-    min-width: 480px;
+    min-width: $mobile;
+
+    margin-left: auto;
+    margin-right: auto;
+
     padding-top: 0px;
 
     background-color: var(--section-bg-cl);
+
     @media screen and (min-width: $tablet) {
-        
+        min-width: $tablet;
     }
 }
 
@@ -20,6 +25,7 @@
 
     color: var(--title-txt-cl);
     @media screen and (min-width: $tablet) {
+        //margin-top: 60px;
         margin-bottom: 30px;
     }
 }
@@ -37,9 +43,7 @@
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 
-    &:not(:last-child) {
-        margin-bottom: 30px;
-    }
+    
     
     @media screen and (min-width: $tablet) {
         width: 354px;

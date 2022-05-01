@@ -1,7 +1,6 @@
 /*блок герой*/
 .hero {
     min-width: 480px;
-    min-height: 400px;
     margin-left: auto;
     margin-right: auto;
     
@@ -9,6 +8,10 @@
     padding-bottom: 118px;
 
     background-color: var(--main-bg-cl);
+
+    @media screen and (min-width: $tablet) {
+        min-width: 768px;
+    }
 
     @media screen and (min-width: $desktop) {
         max-width: 1600px;
@@ -20,7 +23,7 @@
     }
 
     &__title {
-        max-width: 360px;
+        width: 360px;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 30px;

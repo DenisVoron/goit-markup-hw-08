@@ -9,7 +9,6 @@
         z-index: 50;
 
         display: inline-flex;
-        margin-left: auto;
         width: 40px;
         height: 40px;
         
@@ -43,26 +42,25 @@
 //нав-кентейнер для пизиціювання моб меню
 .mobile-container {
     @media screen and (min-width: $tablet) {
-    display: flex;
-    text-align: center;
+        display: none;
     }
     
     @media screen and (max-width: $tabletSecondary) {
-            position: fixed;
+        position: fixed;
 
-            z-index: 20;
+        z-index: 20;
     
-            top: 0;
-            left: 0;
-            width: 100vw;
-            height: 100vh;
+        top: 0;
+        left: 0;
+        width: 100vh;
+        height: 100vh;
     
-            display: flex;
-            flex-direction: column;
+        display: flex;
+        flex-direction: column;
 
-            padding: 48px 40px;
+        padding: 48px 40px;
     
-            background-color: var(--accent-txt-cl);
+        background-color: var(--accent-txt-cl);
     
         &.is-open {
             display: none;

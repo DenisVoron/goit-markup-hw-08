@@ -8,4 +8,8 @@
     letter-spacing: 0.03em;
 
     color: var(--secondary-txt-cl);
+
+    @media screen and (min-width: $tablet) {
+        margin-right: 88px;
+    }
 }
