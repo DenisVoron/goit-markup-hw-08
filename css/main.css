@@ -87,6 +87,12 @@ ul {
   padding: 60px 0px;
 }
 
+@media screen and (min-width: 1170px) {
+  .section {
+    min-width: 1170px;
+  }
+}
+
 img {
   display: block;
   height: auto;
@@ -1021,12 +1027,20 @@ img {
   }
 }
 
+@media screen and (min-width: 1170px) {
+  .work-list {
+    margin-bottom: 50px;
+  }
+}
+
 .work-item-btn:not(:last-child) {
   margin-right: 8px;
 }
 
-.work-item-btn:nth-child(-n + 3) {
-  margin-bottom: 15px;
+@media screen and (min-width: 768px) and (max-width: 1170px) {
+  .work-item-btn:nth-child(-n + 3) {
+    margin-bottom: 15px;
+  }
 }
 
 .work-btn {
@@ -1060,17 +1074,32 @@ img {
   }
 }
 
+@media screen and (min-width: 1170px) {
+  .work {
+    min-width: 1170px;
+  }
+}
+
 .list-pic {
   width: 450px;
   margin-left: auto;
   margin-right: auto;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1170px) {
   .list-pic {
     display: flex;
     flex-wrap: wrap;
     margin: -15px;
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .list-pic {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1170px;
+    padding-left: 0px;
   }
 }
 
@@ -1080,11 +1109,36 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1170px) {
+  .list-pic__item {
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1170px) {
   .list-pic__item {
     width: 354px;
     flex-basis: calc((100% - 4 * 15px) / 2);
     margin: 15px;
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .list-pic__item {
+    width: 370px;
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .list-pic__item__item:nth-child(3n) {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .list-pic__item__item:nth-last-child(-n + 3) {
+    margin-bottom: 0px;
   }
 }
 
@@ -1110,6 +1164,12 @@ img {
   border-right: 1px solid var(--border-cl);
   border-bottom: 1px solid var(--border-cl);
   border-left: 1px solid var(--border-cl);
+}
+
+@media screen and (min-width: 1170px) {
+  .work-text-wrapper {
+    width: 370px;
+  }
 }
 
 /*цвет заголовков портфолио*/

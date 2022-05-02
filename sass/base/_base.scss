@@ -13,6 +13,10 @@
 .section {
     min-width: $mobile;
     padding: 60px 0px;
+
+    @media screen and (min-width: $desktopSecondary) {
+        min-width: $desktopSecondary;
+    }
 }
 
 img {
