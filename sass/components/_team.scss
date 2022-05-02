@@ -12,6 +12,10 @@
     @media screen and (min-width: $tablet) {
         min-width: $tablet;
     }
+
+    @media screen and (min-width: $desktopSecondary) {
+        min-width: $desktop;
+    }
 }
 
 .team-title {
@@ -25,8 +29,11 @@
 
     color: var(--title-txt-cl);
     @media screen and (min-width: $tablet) {
-        //margin-top: 60px;
         margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: $desktopSecondary) {
+        //@debug: 50px;
     }
 }
 .team-list {
@@ -35,6 +42,11 @@
         flex-wrap: wrap;
 
         margin: -15px;
+    }
+
+    @media screen and (min-width: $desktopSecondary) {
+        flex-wrap: nowrap;
+        margin: 0px;
     }
 }
 .team-list__item {
@@ -45,8 +57,15 @@
     
     @media screen and (min-width: $tablet) {
         flex-basis: calc((100% - 4 * 15px) / 2);
-        //width: 354px;
         margin: 15px;
+    }
+
+    @media screen and (min-width: $desktopSecondary) {
+        margin: 0;
+    }
+
+    &:not(:last-child){
+        margin-right: 30px;
     }
 }
 

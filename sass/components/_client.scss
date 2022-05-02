@@ -7,6 +7,7 @@
 /*section client*/
 .client-title {
     margin-bottom: 50px;
+    
     font-weight: 700;
     font-size: 28px;
     line-height: 1.18;
@@ -14,6 +15,11 @@
     letter-spacing: 0.03em;
 
     color: var(--title-txt-cl);
+
+    @media screen and (min-width: $desktopSecondary) {
+        font-size: 36px;
+        line-height: 1.17;
+    }
 }
 
 
@@ -24,11 +30,26 @@
     margin-right: auto;
     
     margin: -15px;
+
+    @media screen and (min-width: $desktopSecondary) {
+        flex-wrap: nowrap;
+        margin: 0;
+    }
 }
 
 .client-item {
     flex-basis: calc((100% - 6 * 15px) / 3);
     margin: 15px;
+
+    @media screen and (min-width: $desktopSecondary) {
+        margin: 0;
+    }
+
+    &:not(:last-child) {
+        @media screen and (min-width: $desktopSecondary) {
+            margin-right: 30px;
+        }
+    }
 }
 
 .client-link {
@@ -52,6 +73,10 @@
 
     @media screen and (min-width: $tablet) {
         width: 226px;
+    }
+
+    @media screen and (min-width: $desktopSecondary) {
+        width: 170px;
     }
 
     &:hover,

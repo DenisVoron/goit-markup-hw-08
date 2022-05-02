@@ -27,8 +27,8 @@
             min-width: $tablet;
             display: flex;
         }
-        
-        @media screen and (min-width: $desktop) {
+
+        @media screen and (min-width: $desktopSecondary) {
             min-width: $desktop;
         }
     }
