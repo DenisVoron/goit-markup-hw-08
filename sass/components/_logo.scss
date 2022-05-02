@@ -12,4 +12,11 @@
     @media screen and (min-width: $tablet) {
         margin-right: 88px;
     }
+
+    @media screen and (min-width: $desktop) {
+        margin-right: 93px;
+
+        font-size: 26px;
+        line-height: 1.2;
+    }
 }

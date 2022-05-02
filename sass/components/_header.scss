@@ -27,6 +27,10 @@
             min-width: $tablet;
             display: flex;
         }
+        
+        @media screen and (min-width: $desktop) {
+            min-width: $desktop;
+        }
     }
 
     /*header навигация*/
