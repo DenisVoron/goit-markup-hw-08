@@ -10,15 +10,30 @@
     
 }
 
+.footer-container {
+    @media screen and (min-width: $desktopSecondary) {
+        display: flex;
+    }
+}
+
 .footer-container__position {
-    @media screen and (min-width: $tablet) {
+    @media screen and (min-width: $tablet) and (max-width: $desktopSecondary) {
         display: flex;
         align-items: center;
         justify-content: space-around;
         margin-bottom: 60px;
     }
+
+    @media screen and (min-width: $desktopSecondary) {
+        display: flex;
+        margin-right: 93px;
+    }
 }
-  
+.address-wrapper:not(:last-child) {
+    @media screen and (min-width: $desktopSecondary) {
+        margin-right: 70px;
+    }
+}
 
 /*соц мережі футер*/
 .join-wrapper {

@@ -14,12 +14,21 @@
     text-transform: uppercase;
 
     color: var(--accent-txt-cl);
+
+    @media screen and (min-width: $desktopSecondary) {
+        text-align: justify;
+    }
 }
 
 .mailing-form {
+    @media screen and (min-width: $desktopSecondary) {
+        display: flex;
+    }
 }
-
-.form-label { 
+.form-label {
+    @media screen and (min-width: $desktopSecondary) {
+        margin-right: 12px;
+    }
 }
 
 .form-input {
@@ -37,6 +46,17 @@
     background-color: var(--main-bg-cl);
     outline: none;
 
+    @media screen and (min-width: $tablet) {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @media screen and (min-width: $desktopSecondary) {
+        width: 358px;
+        margin-bottom: 0;
+    }
+
     &::placeholder {
         font-family: var(--main-font);
         font-weight: 400;
@@ -50,11 +70,5 @@
     
     &:focus {
         border-color: var(--secondary-txt-cl);
-    }
-
-    @media screen and (min-width: $tablet) {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
     }
 }
