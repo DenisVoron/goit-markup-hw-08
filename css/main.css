@@ -88,7 +88,7 @@ ul {
 
 @media screen and (min-width: 1200px) {
   .section {
-    max-width: 1200px;
+    padding: 94px 0px;
   }
 }
 
@@ -534,7 +534,7 @@ img {
 
 /*блок герой*/
 .hero {
-  min-width: 480px;
+  max-width: 480px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 118px;
@@ -546,13 +546,13 @@ img {
 
 @media screen and (min-width: 768px) {
   .hero {
-    min-width: 768px;
+    max-width: 768px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-img_md.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-img_md@2x.jpg);
   }
 }
 
-@media screen and (min-width: 1170px) {
+@media screen and (min-width: 1200px) {
   .hero {
     max-width: 1600px;
     height: 600px;
@@ -578,7 +578,7 @@ img {
   color: var(--accent-txt-cl);
 }
 
-@media screen and (min-width: 1170px) {
+@media screen and (min-width: 1200px) {
   .hero__title {
     width: 696px;
     font-size: 44px;
@@ -588,20 +588,18 @@ img {
 
 /*оформлєння інфо-блок*/
 .benefits {
-  min-width: 480px;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 480px;
 }
 
 @media screen and (min-width: 768px) {
   .benefits {
-    min-width: 768px;
+    max-width: 768px;
   }
 }
 
-@media screen and (min-width: 1170px) {
+@media screen and (min-width: 1200px) {
   .benefits {
-    min-width: 1200px;
+    max-width: 1200px;
   }
 }
 
@@ -619,13 +617,13 @@ img {
   }
 }
 
-@media screen and (min-width: 1170px) {
+@media screen and (min-width: 1200px) {
   .benefits-list {
     margin: 0;
   }
 }
 
-@media screen and (min-width: 1170px) {
+@media screen and (min-width: 1200px) {
   .benefits-list {
     flex-wrap: nowrap;
     margin-left: auto;
@@ -644,14 +642,14 @@ img {
   }
 }
 
-@media screen and (min-width: 1170px) {
+@media screen and (min-width: 1200px) {
   .benefits-list__item {
     width: 270px;
     margin: 0;
   }
 }
 
-@media screen and (min-width: 1170px) {
+@media screen and (min-width: 1200px) {
   .benefits-list__item:not(:last-child) {
     margin-right: 30px;
   }
@@ -674,7 +672,7 @@ img {
   }
 }
 
-@media screen and (min-width: 1170px) {
+@media screen and (min-width: 1200px) {
   .benefits-list__container {
     width: 270px;
   }
@@ -707,7 +705,7 @@ img {
   margin-bottom: 30px;
 }
 
-@media screen and (min-width: 1170px) {
+@media screen and (min-width: 1200px) {
   .benefits-list__description {
     margin-bottom: 0;
   }
@@ -725,7 +723,9 @@ img {
 
 @media screen and (min-width: 1200px) {
   .about {
-    display: block;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -773,7 +773,7 @@ img {
 
 /*секция команда*/
 .team {
-  min-width: 480px;
+  max-width: 480px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 0px;
@@ -782,13 +782,13 @@ img {
 
 @media screen and (min-width: 768px) {
   .team {
-    min-width: 768px;
+    max-width: 768px;
   }
 }
 
-@media screen and (min-width: 1170px) {
+@media screen and (min-width: 1200px) {
   .team {
-    min-width: 1200px;
+    max-width: 1200px;
   }
 }
 

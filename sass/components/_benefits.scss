@@ -1,15 +1,13 @@
 /*оформлєння інфо-блок*/
 .benefits {
-    min-width: $mobile;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: $mobile;
 
     @media screen and (min-width: $tablet) {
-        min-width: $tablet;
+        max-width: $tablet;
     }
 
-    @media screen and (min-width: $desktopSecondary) {
-        min-width: $desktop;
+    @media screen and (min-width: $desktop) {
+        max-width: $desktop;
     }
 }
 .benefits-list {
@@ -19,10 +17,11 @@
         flex-wrap: wrap;
     }
 
-    @media screen and (min-width: $desktopSecondary) {
+    @media screen and (min-width: $desktop) {
         margin: 0;
     }
-    @media screen and (min-width: $desktopSecondary) {
+
+    @media screen and (min-width: $desktop) {
         flex-wrap: nowrap;
         margin-left: auto;
         margin-right: auto;
@@ -35,7 +34,7 @@
             margin: 15px;
         }
 
-        @media screen and (min-width: $desktopSecondary) {
+        @media screen and (min-width: $desktop) {
             width: 270px;
             margin: 0;
 
@@ -43,7 +42,7 @@
     }
 
     &__item:not(:last-child){
-        @media screen and (min-width: $desktopSecondary) {
+        @media screen and (min-width: $desktop) {
             margin-right: 30px;
         }
     }
@@ -63,7 +62,7 @@
         @media screen and (min-width: $tablet) {
             width: 354px;
         }
-        @media screen and (min-width: $desktopSecondary) {
+        @media screen and (min-width: $desktop) {
             width: 270px;
         }
     }
@@ -97,7 +96,7 @@
         letter-spacing: 0.03em;
         margin-bottom: 30px;
         
-        @media screen and (min-width: $desktopSecondary) {
+        @media screen and (min-width: $desktop) {
             margin-bottom: 0;
         }
     }
