@@ -16,7 +16,7 @@
 
     color: var(--title-txt-cl);
 
-    @media screen and (min-width: $desktopSecondary) {
+    @media screen and (min-width: $desktop) {
         font-size: 36px;
         line-height: 1.17;
     }

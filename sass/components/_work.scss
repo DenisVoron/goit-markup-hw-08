@@ -1,11 +1,11 @@
 //секція робіт
 .work {
     @media screen and (min-width: $tablet) {
-       min-width: $tablet;
+       max-width: $tablet;
     }
 
-    @media screen and (min-width: $desktopSecondary) {
-        min-width: $desktopSecondary;
+    @media screen and (min-width: $desktop) {
+        max-width: $desktop;
     }
 }
 
@@ -14,38 +14,21 @@
     margin-left: auto;
     margin-right: auto;
 
-    @media screen and (min-width: $tablet) and (max-width: $desktopSecondary) {
+    @media screen and (min-width: $tablet) {
        display: flex;
        flex-wrap: wrap;
 
-       margin: -15px;
-    }
-
-    @media screen and (min-width: $desktopSecondary) {
-        display: flex;
-        flex-wrap: wrap;
-        width: $desktopSecondary;
-        padding-left: 0px;
+       margin: -30px;
     }
 
     &__item {
-        @media screen and (max-width: $tabletSecondary) {
-            &:not(:last-child) {
-                margin-bottom: 30px;
-            }
-        }
-
-        @media screen and (min-width: $desktopSecondary) {
-            margin-right: 30px;
-            margin-bottom: 30px;
-        }
-
-        @media screen and (min-width: $tablet) and (max-width: $desktopSecondary) {
+        @media screen and (min-width: $tablet) {
             width: 354px;
-            flex-basis: calc((100% - 4 * 15px) / 2);
-            margin: 15px;
+            flex-basis: calc((100% - 2 * 30px) / 2);
+            margin: 30px;
         }
-        @media screen and (min-width: $desktopSecondary) {
+
+        @media screen and (min-width: $desktop) {
             width: 370px;
         }
 

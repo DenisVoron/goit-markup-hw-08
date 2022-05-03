@@ -12,9 +12,10 @@
 
     @media screen and (min-width: $tablet) {
         justify-content: center;
+        margin-bottom: 30px;
     }
 
-    @media screen and (min-width: $desktopSecondary) {
+    @media screen and (min-width: $desktop) {
         margin-bottom: 50px;
     }
 
@@ -25,8 +26,8 @@
 }
 
 .work-item-btn:nth-child(-n + 3) {
-    @media screen and (min-width: $tablet) and (max-width: $desktopSecondary) {
-        margin-bottom: 15px;
+    @media screen and (min-width: $tablet) and (max-width: $desktop) {
+       // margin-bottom: 15px;
     }
 }
 
@@ -51,8 +52,6 @@
     transition-duration: var(--time-change);
     transition-timing-function: var(--time-steps);
     transition-delay: 100ms;
-
-
 
     /*фокус-ховер кнопки фильтр*/
     &:hover,

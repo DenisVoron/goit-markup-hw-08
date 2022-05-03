@@ -16,12 +16,7 @@
     background-color: var(--accent-txt-cl);
 
     @media screen and (min-width: $tablet) {
-        max-width: $tablet;
         height: 80px;
-    }
-
-    @media screen and (min-width: $desktop) {
-        max-width: 100%;
     }
 
 

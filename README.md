@@ -67,3 +67,16 @@ width: 738px;
         padding-left: 215px;
         padding-right: 215px;
     }
+
+забрал с ворк
+
+@media screen and (max-width: $tabletSecondary) {
+&:not(:last-child) {
+margin-bottom: 30px;
+}
+}
+
+        @media screen and (min-width: $desktopSecondary) {
+            margin-right: 30px;
+            margin-bottom: 30px;
+        }
