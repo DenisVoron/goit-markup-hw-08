@@ -83,13 +83,12 @@ ul {
 }
 
 .section {
-  min-width: 480px;
   padding: 60px 0px;
 }
 
-@media screen and (min-width: 1170px) {
+@media screen and (min-width: 1200px) {
   .section {
-    min-width: 1170px;
+    max-width: 1200px;
   }
 }
 
@@ -128,13 +127,6 @@ img {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-}
-
-@media screen and (min-width: 1170px) {
-  .container {
-    padding-left: 215px;
-    padding-right: 215px;
-  }
 }
 
 /*общий блок подзаголовков*/
@@ -396,25 +388,28 @@ img {
 
 @media screen and (min-width: 768px) {
   .header {
-    width: 100%;
+    max-width: 768px;
     height: 80px;
   }
 }
 
-.header__container {
-  min-width: 480px;
+@media screen and (min-width: 1200px) {
+  .header {
+    max-width: 100%;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .header__container {
-    min-width: 768px;
+    max-width: 768px;
     display: flex;
   }
 }
 
-@media screen and (min-width: 1170px) {
+@media screen and (min-width: 1200px) {
   .header__container {
-    min-width: 1600px;
+    max-width: 1200px;
+    justify-content: center;
   }
 }
 
@@ -442,15 +437,16 @@ img {
   }
 }
 
-@media screen and (min-width: 1170px) {
+@media screen and (min-width: 1200px) {
   .contact-list {
     display: flex;
     margin-top: 0;
     align-items: center;
+    margin-left: auto;
   }
 }
 
-@media screen and (min-width: 1170px) {
+@media screen and (min-width: 1200px) {
   .contact-list__item {
     align-items: center;
   }
@@ -462,7 +458,7 @@ img {
   }
 }
 
-@media screen and (min-width: 1170px) {
+@media screen and (min-width: 1200px) {
   .contact-list__item:not(:last-child) {
     margin-bottom: 0;
     margin-right: 50px;
@@ -493,7 +489,7 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .contact-link {
     font-size: 14px;
     line-height: 1.14;
@@ -517,7 +513,7 @@ img {
   height: 10px;
 }
 
-@media screen and (min-width: 1170px) {
+@media screen and (min-width: 1200px) {
   .contact-link__icon--mail {
     width: 16px;
     height: 12px;
@@ -530,7 +526,7 @@ img {
   height: 14px;
 }
 
-@media screen and (min-width: 1170px) {
+@media screen and (min-width: 1200px) {
   .contact-link__icon--phon {
     height: 16px;
   }
@@ -605,7 +601,7 @@ img {
 
 @media screen and (min-width: 1170px) {
   .benefits {
-    min-width: 1600px;
+    min-width: 1200px;
   }
 }
 
@@ -727,7 +723,7 @@ img {
   }
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .about {
     display: block;
   }
@@ -792,7 +788,7 @@ img {
 
 @media screen and (min-width: 1170px) {
   .team {
-    min-width: 1600px;
+    min-width: 1200px;
   }
 }
 
@@ -945,8 +941,7 @@ img {
 .client-list {
   display: flex;
   flex-wrap: wrap;
-  margin-left: auto;
-  margin-right: auto;
+  justify-content: center;
   margin: -15px;
 }
 
@@ -957,9 +952,11 @@ img {
   }
 }
 
-.client-item {
-  flex-basis: calc((100% - 6 * 15px) / 3);
-  margin: 15px;
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .client-item {
+    flex-basis: calc((100% - 6 * 15px) / 3);
+    margin: 15px;
+  }
 }
 
 @media screen and (min-width: 1170px) {
@@ -1240,6 +1237,7 @@ img {
 @media screen and (min-width: 1170px) {
   .footer-container {
     display: flex;
+    justify-content: center;
   }
 }
 

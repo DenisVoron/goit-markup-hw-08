@@ -8,15 +8,16 @@
         margin-left: 84px;
     }
 
-    @media screen and (min-width: $desktopSecondary) {
+    @media screen and (min-width: $desktop) {
         display: flex;
         margin-top: 0;
         align-items: center;
+        margin-left: auto;
     }
 }
 
 .contact-list__item {
-    @media screen and (min-width: $desktopSecondary) {
+    @media screen and (min-width: $desktop) {
         align-items: center;
     }
 }
@@ -25,7 +26,7 @@
         margin-bottom: 10px;
     }
 
-    @media screen and (min-width: $desktopSecondary) {
+    @media screen and (min-width: $desktop) {
         margin-bottom: 0;
         margin-right: 50px;
     }
@@ -55,7 +56,7 @@
         letter-spacing: 0.02em;
     }
 
-    @media screen and (min-width: $tablet) {
+    @media screen and (min-width: $desktop) {
         font-size: 14px;
         line-height: 1.14;
     }
@@ -78,7 +79,7 @@
         width: 14px;
         height: 10px;
 
-        @media screen and (min-width: $desktopSecondary) {
+        @media screen and (min-width: $desktop) {
             width: 16px;
             height: 12px;
         }
@@ -90,7 +91,7 @@
         width: 10px;
         height: 14px;
 
-        @media screen and (min-width: $desktopSecondary) {
+        @media screen and (min-width: $desktop) {
             height: 16px;
         }
     }
