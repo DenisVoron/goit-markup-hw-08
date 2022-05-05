@@ -46,6 +46,8 @@
     }
     
     @media screen and (max-width: $tabletSecondary) {
+        max-width: $mobile;
+        
         position: fixed;
 
         z-index: 20;

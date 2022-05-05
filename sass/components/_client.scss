@@ -6,6 +6,11 @@
     @media screen and (min-width: $tablet) {
         max-width: $tablet;
     }
+
+    @media screen and (min-width: $desktop) {
+        max-width: $desktop;
+    }
+
 }
 /*section client*/
 .client-title {
@@ -28,8 +33,6 @@
 
 
 .client-list {
-    max-width: $mobile;
-
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -37,21 +40,25 @@
     margin: -15px;
 
     @media screen and (min-width: $desktop) {
+        max-width: $desktop;
         flex-wrap: nowrap;
         margin: 0;
     }
 }
 
 .client-item {
-       flex-basis: calc((100% - 4 * 15px) / 2);
-       margin: 15px;
+    width: 210px;
+    flex-basis: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
 
     @media screen and (min-width: $tablet) {
+        width: 226px;
         flex-basis: calc((100% - 6 * 15px) / 3);
         margin: 15px;
     }
 
     @media screen and (min-width: $desktop) {
+        width: 170px;
         margin: 0;
     }
 
@@ -67,7 +74,6 @@
     align-items: center;
     justify-content: center;
 
-    width: 210px;
     height: 92px;
 
     fill: var(--icon-color);
@@ -80,14 +86,6 @@
     transition-duration: var(--time-change);
     transition-timing-function: var(--time-steps);
     transition-delay: 100ms;
-
-    @media screen and (min-width: $tablet) {
-        width: 226px;
-    }
-
-    @media screen and (min-width: $desktop) {
-        width: 170px;
-    }
 
     &:hover,
     &:focus {
