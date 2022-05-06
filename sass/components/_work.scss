@@ -11,26 +11,23 @@
 }
 
 .list-pic {
-    //max-width: 450px;
     margin-left: auto;
     margin-right: auto;
 
     @media screen and (min-width: $tablet) {
-       display: flex;
-       flex-wrap: wrap;
+        display: flex;
+        flex-wrap: wrap;
 
-       margin: -30px;
+        margin: -15px;
     }
     @media screen and (min-width: $desktop) {
-        max-width: $desktop;
         margin: -15px;
     }
 
     &__item {
         @media screen and (min-width: $tablet) {
-            //width: 354px;
-            flex-basis: calc((100% - 2 * 30px) / 2);
-            margin: 30px;
+            width: 354px;
+            margin: 15px;
         }
 
         @media screen and (min-width: $desktop) {
@@ -70,8 +67,6 @@
 }
 
 .work-text-wrapper {
-    width: 354px;
-
     padding-top: 20px;
     padding-right: 24px;
     padding-bottom: 20px;

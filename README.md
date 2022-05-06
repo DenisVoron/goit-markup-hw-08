@@ -158,3 +158,16 @@ $desktop: 1200px;
             @content;
          }
       }
+
+.benefits {
+max-width: $mobile;
+
+    @media screen and (min-width: $tablet) {
+        max-width: $tablet;
+    }
+
+    @media screen and (min-width: $desktop) {
+        max-width: $desktop;
+    }
+
+}

@@ -122,10 +122,23 @@ img {
 }
 
 .container {
+  max-width: 480px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
 }
 
 /*общий блок подзаголовков*/
@@ -211,7 +224,6 @@ img {
 
 @media screen and (max-width: 767px) {
   .mobile-container {
-    max-width: 480px;
     position: fixed;
     z-index: 20;
     top: 0;
@@ -596,22 +608,6 @@ img {
 }
 
 /*оформлєння інфо-блок*/
-.benefits {
-  max-width: 480px;
-}
-
-@media screen and (min-width: 768px) {
-  .benefits {
-    max-width: 768px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .benefits {
-    max-width: 1200px;
-  }
-}
-
 .benefits-list {
   /*icon about*/
   /*text about*/
@@ -640,6 +636,10 @@ img {
   }
 }
 
+.benefits-list__item {
+  max-width: 450px;
+}
+
 @media screen and (min-width: 768px) {
   .benefits-list__item {
     width: 354px;
@@ -665,7 +665,7 @@ img {
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
-  width: 100%;
+  max-width: 450px;
   height: 120px;
   background: var(--section-bg-cl);
   border-radius: 4px;
@@ -778,7 +778,7 @@ img {
 
 /*секция команда*/
 .team {
-  max-width: 480px;
+  max-width: 320px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 0px;
@@ -842,7 +842,7 @@ img {
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .team-list__item {
     flex-basis: calc((100% - 4 * 15px) / 2);
     margin: 15px;
@@ -1104,21 +1104,20 @@ img {
   .list-pic {
     display: flex;
     flex-wrap: wrap;
-    margin: -30px;
+    margin: -15px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .list-pic {
-    max-width: 1200px;
     margin: -15px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .list-pic__item {
-    flex-basis: calc((100% - 2 * 30px) / 2);
-    margin: 30px;
+    width: 354px;
+    margin: 15px;
   }
 }
 
@@ -1154,7 +1153,6 @@ img {
 }
 
 .work-text-wrapper {
-  width: 354px;
   padding-top: 20px;
   padding-right: 24px;
   padding-bottom: 20px;
@@ -1484,8 +1482,7 @@ img {
 .modal {
   position: absolute;
   top: 50%;
-  left: 48%;
-  width: 450px;
+  left: 50%;
   height: 609px;
   background-color: var(--accent-txt-cl);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1530,7 +1527,6 @@ img {
 
 .call-input {
   padding: 12px 12px 12px 42px;
-  width: 100%;
   height: 40px;
   outline: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
