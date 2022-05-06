@@ -1117,7 +1117,6 @@ img {
 
 @media screen and (min-width: 768px) {
   .list-pic__item {
-    width: 354px;
     flex-basis: calc((100% - 2 * 30px) / 2);
     margin: 30px;
   }
@@ -1125,7 +1124,6 @@ img {
 
 @media screen and (min-width: 1200px) {
   .list-pic__item {
-    width: 370px;
     flex-basis: calc((100% - 6 * 15px) / 3);
     margin: 15px;
   }
