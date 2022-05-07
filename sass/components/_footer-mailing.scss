@@ -32,7 +32,11 @@
 }
 
 .form-input {
-    width: 450px;
+    //min-width: 450px;
+
+    //display: block;
+    //margin-left: auto;
+    //margin-right: auto;
     height: 50px;
 
     margin-bottom: 20px;
@@ -46,8 +50,11 @@
     background-color: var(--main-bg-cl);
     outline: none;
 
+    @media screen and (min-width: $mobile) {
+        //width: 450px;
+    }
+
     @media screen and (min-width: $tablet) {
-        display: block;
         margin-left: auto;
         margin-right: auto;
     }

@@ -1,4 +1,7 @@
 /*оформлєння інфо-блок*/
+.benefits {
+    width: $mobile;
+}
 .benefits-list {
     @media screen and (min-width: $tablet) {
         display: flex;
@@ -17,7 +20,9 @@
     }
     
     &__item {
-        max-width: 450px;
+        @media screen and (min-width: $mobile) {
+            width: 450px;
+        }
         @media screen and (min-width: $tablet) {
             width: 354px;
             margin: 15px;
