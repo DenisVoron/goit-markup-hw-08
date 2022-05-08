@@ -1,46 +1,48 @@
-@import './mobile-menu';
-@import './hader-nav';
+@import "./mobile-menu";
+@import "./hader-nav";
 
 /*Header*/
 .header {
-    position: fixed;
-    z-index: 2;
+  position: fixed;
+  z-index: 2;
 
-    top: 0;
-    left: 0;
+  top: 0;
+  left: 0;
 
-    width: 100%;
-    height: 60px;
+  width: 100%;
+  height: 60px;
 
-    border-bottom: 1px solid var(--top-border-cl);
-    background-color: var(--accent-txt-cl);
+  border-bottom: 1px solid var(--top-border-cl);
+  background-color: var(--accent-txt-cl);
+
+  @media screen and (min-width: $tablet) {
+    height: 80px;
+  }
+
+  &__container {
+    width: $mobile;
+
+    padding: 16px 0px;
+    margin-left: auto;
+    margin-right: auto;
 
     @media screen and (min-width: $tablet) {
-        height: 80px;
+      width: $tablet;
+      display: flex;
     }
 
-
-    &__container {
-        //max-width: $mobile;
-        
-        @media screen and (min-width: $tablet) {
-            max-width: $tablet;
-            display: flex;
-        }
-
-        @media screen and (min-width: $desktop) {
-            max-width: $desktop;
-            justify-content: center;
-        }
+    @media screen and (min-width: $desktop) {
+      max-width: $desktop;
+      justify-content: center;
     }
+  }
 
-    /*header навигация*/
-    &__nav {
-        display: flex;
-        align-items: center;
-        @media screen and (max-width: $tabletSecondary) {
-            justify-content: space-between;
-        }
+  /*header навигация*/
+  &__nav {
+    display: flex;
+    align-items: center;
+    @media screen and (max-width: $tabletSecondary) {
+      justify-content: space-between;
     }
+  }
 }
-

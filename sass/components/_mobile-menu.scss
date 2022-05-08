@@ -1,172 +1,172 @@
 //кнопка моб меню
 .header-button {
-    @media screen and (min-width: $tablet) {
-        display: none;
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+
+  @media screen and (max-width: $tabletSecondary) {
+    position: relative;
+    z-index: 50;
+
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+
+    padding: 0;
+    border: none;
+    background-color: transparent;
+
+    & .header-button__menu {
+      display: none;
     }
 
-    @media screen and (max-width: $tabletSecondary) {
-        position: relative;
-        z-index: 50;
-
-        display: inline-flex;
-        width: 40px;
-        height: 40px;
-        
-        padding: 0;
-        border: none;
-        background-color: transparent;
-        
-        & .header-button__menu {
-            display: none;
-        }
-        
-        & .header-button__cross {
-            display: block;
-        }
-        
-        &.is-active &__menu {
-            display: block;
-        }
-        
-        &.is-active &__cross {
-            display: none;
-        }
-
-        &:hover,
-        &:focus {
-            fill: var(--secondary-txt-cl);
-        }
+    & .header-button__cross {
+      display: block;
     }
+
+    &.is-active &__menu {
+      display: block;
+    }
+
+    &.is-active &__cross {
+      display: none;
+    }
+
+    &:hover,
+    &:focus {
+      fill: var(--secondary-txt-cl);
+    }
+  }
 }
 
 //нав-кентейнер для пизиціювання моб меню
 .mobile-container {
-    @media screen and (min-width: $tablet) {
-        display: none;
-    }
-    
-    @media screen and (max-width: $tabletSecondary) {
-        position: fixed;
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
 
-        z-index: 20;
-    
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-    
-        display: flex;
-        flex-direction: column;
+  @media screen and (max-width: $tabletSecondary) {
+    position: fixed;
 
-        padding: 48px 40px;
-    
-        background-color: var(--accent-txt-cl);
-    
-        &.is-open {
-            display: none;
-        }
+    z-index: 20;
+
+    top: 0;
+    left: 0;
+    width: $mobile;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 48px 40px;
+
+    background-color: var(--accent-txt-cl);
+
+    &.is-open {
+      display: none;
     }
+  }
 }
 
 .mobile-list__item {
-    @media screen and (max-width: $tabletSecondary) {
-        &:not(:last-child) {
-            margin-bottom: 32px;
-        }
+  @media screen and (max-width: $tabletSecondary) {
+    &:not(:last-child) {
+      margin-bottom: 32px;
     }
+  }
 }
 
 .mobile-list__link {
-    @media screen and (max-width: $tabletSecondary) {
-        font-family: var(--main-font);
-        font-weight: 500;
-        font-size: 40px;
-        line-height: 1.17;
-        letter-spacing: 0.02em;
+  @media screen and (max-width: $tabletSecondary) {
+    font-family: var(--main-font);
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
 
-        color: var(--title-txt-cl);
-    }
+    color: var(--title-txt-cl);
+  }
 }
 
 .mobile-group {
-    @media screen and (max-width: $tabletSecondary) {
-        margin-top: auto;
-    }
+  @media screen and (max-width: $tabletSecondary) {
+    margin-top: auto;
+  }
 }
 .mobile-contact {
-    @media screen and (max-width: $tabletSecondary) {
-        margin-bottom: 64px;
-    }
+  @media screen and (max-width: $tabletSecondary) {
+    margin-bottom: 64px;
+  }
 }
 
 .mobile-contact__item {
-        @media screen and (max-width: $tabletSecondary) {
-            &:nth-child(-n + 1) {
-                margin-bottom: 32px;
-            }
-        }
+  @media screen and (max-width: $tabletSecondary) {
+    &:nth-child(-n + 1) {
+      margin-bottom: 32px;
+    }
+  }
 }
 
 .mobile-contact__link--color {
-        @media screen and (max-width: $tabletSecondary) {
-            font-family: var(--main-font);
-            font-weight: 500;
-            font-size: 34px;
-            line-height: 1.18;
-            
-            letter-spacing: 0.02em;
-            
-            color: var(--secondary-txt-cl);
-        }
+  @media screen and (max-width: $tabletSecondary) {
+    font-family: var(--main-font);
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.18;
+
+    letter-spacing: 0.02em;
+
+    color: var(--secondary-txt-cl);
+  }
 }
 
 .mobile-contact__link {
-        @media screen and (max-width: $tabletSecondary) {
-            font-family: var(--main-font);
-            font-weight: 500;
-            font-size: 24px;
-            line-height: 1.17;
-            letter-spacing: 0.02em;
-            
-            color: var(--primary-txt-cl);
-        }
+  @media screen and (max-width: $tabletSecondary) {
+    font-family: var(--main-font);
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+
+    color: var(--primary-txt-cl);
+  }
 }
 .mobile-socials {
-    @media screen and (max-width: $tabletSecondary) {
-        display: flex;
-        flex-wrap: wrap;
-        margin-top: -10px;
-        margin-right: -10px;
-    }
+  @media screen and (max-width: $tabletSecondary) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -10px;
+    margin-right: -10px;
+  }
 
-    @media screen and (max-width: $tabletSecondary) {
-        &__item {
-            margin-top: 10px;
-            margin-right: 10px;
-        }
+  @media screen and (max-width: $tabletSecondary) {
+    &__item {
+      margin-top: 10px;
+      margin-right: 10px;
     }
+  }
 }
 
 .mobile-socials__link {
-    @media screen and (max-width: $tabletSecondary) {
-        display: block;
-        padding-right: 10px;
-        border-right: 1px solid rgba(33, 33, 33, 0.2);
+  @media screen and (max-width: $tabletSecondary) {
+    display: block;
+    padding-right: 10px;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
 
-        font-family: var(--main-font);
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 1.22;
-        
-        letter-spacing: 0.02em;
-        
-        color: var(--secondary-txt-cl);
-    }
+    font-family: var(--main-font);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+
+    letter-spacing: 0.02em;
+
+    color: var(--secondary-txt-cl);
+  }
 }
 
 .mobile-socials__item:last-child .mobile-socials__link {
-    @media screen and (max-width: $tabletSecondary) {
-        padding: 0;
-        border: none;
-    }
+  @media screen and (max-width: $tabletSecondary) {
+    padding: 0;
+    border: none;
+  }
 }

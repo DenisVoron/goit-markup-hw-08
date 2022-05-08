@@ -1,29 +1,30 @@
-@import './reset';
+@import "./reset";
 
 .body {
-    font-family: var(--main-font);
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    background-color: var(--accent-txt-cl);
+  font-family: var(--main-font);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  background-color: var(--accent-txt-cl);
 
-    color: var(--primary-txt-cl);
+  color: var(--primary-txt-cl);
 }
 
 .section {
-    padding: 60px 0px;
+  //@function: $mobile;
+  padding: 60px 0px;
 
-    @media screen and (min-width: $desktop) {
-        padding: 94px 0px;
-    }
+  @media screen and (min-width: $desktop) {
+    padding: 94px 0px;
+  }
 }
 
 img {
-    display: block;
-    max-width: 100%;
-    height: auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .pointer {
-    cursor: pointer;
+  cursor: pointer;
 }

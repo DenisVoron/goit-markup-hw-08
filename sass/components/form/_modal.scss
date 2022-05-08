@@ -1,150 +1,149 @@
 .modal {
-    position: absolute;
+  position: absolute;
 
+  top: 50%;
+  left: 50%;
 
-    top: 50%;
-    left: 50%;
+  width: 450px;
+  height: 609px;
 
-    height: 609px;
+  background-color: var(--accent-txt-cl);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
 
-    background-color: var(--accent-txt-cl);
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
-        0px 1px 1px rgba(0, 0, 0, 0.14),
-        0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
+  transform: translate(-50%, -50%) scale(1);
 
-    transform: translate(-50%, -50%) scale(1);
-
-    transition: transform var(--time-change) var(--time-steps);
+  transition: transform var(--time-change) var(--time-steps);
 }
 
 .call-form {
-    padding: 40px;
+  padding: 40px;
 }
 
 .form-contents {
-    display: block;
+  display: block;
 
-    margin-bottom: 12px;
+  margin-bottom: 12px;
 
-    font-family: var(--main-font);
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.5;
-    text-align: center;
-    letter-spacing: 0.03em;
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.03em;
 
-    color: var(--title-txt-cl);
+  color: var(--title-txt-cl);
 }
 
 .form-group {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .label {
-    margin-bottom: 4px;
+  margin-bottom: 4px;
 
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.17;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
 
-    letter-spacing: 0.01em;
+  letter-spacing: 0.01em;
 }
 
 .input-wrapper {
-    position: relative;
+  position: relative;
 }
 
 .call-input {
-    padding: 12px 12px 12px 42px;
+  padding: 12px 12px 12px 42px;
 
-    //@at-root: 100%;
-    height: 40px;
+  width: 100%;
+  height: 40px;
 
-    outline: none;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    box-sizing: border-box;
-    border-radius: 4px;
+  outline: none;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
 
-    &:focus + .icon-call,
-    &:hover {
-        fill: var(--secondary-txt-cl);
-        border-color: var(--secondary-txt-cl);
-    }
+  &:focus + .icon-call,
+  &:hover {
+    fill: var(--secondary-txt-cl);
+    border-color: var(--secondary-txt-cl);
+  }
 }
 
 .icon-call {
-    position: absolute;
+  position: absolute;
 
-    top: 14px;
-    left: 15px;
+  top: 14px;
+  left: 15px;
 }
 
 .form-comment {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .agreement {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 30px;
+
+  &-label {
     display: flex;
     align-items: center;
     justify-content: center;
-
-    margin-bottom: 30px;
-
-    &-label {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+  }
 }
 
 /*кнопка закриття модалки*/
 .clos-modal {
-    position: absolute;
+  position: absolute;
 
-    right: 8px;
-    top: 8px;
-    width: 30px;
-    height: 30px;
+  right: 8px;
+  top: 8px;
+  width: 30px;
+  height: 30px;
 
-    background-color: var(--accent-txt-cl);
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    box-sizing: border-box;
-    border-radius: 50%;
+  background-color: var(--accent-txt-cl);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  border-radius: 50%;
 
-    &:hover,
-    &:focus {
-        fill: var(--secondary-txt-cl);
-    }
+  &:hover,
+  &:focus {
+    fill: var(--secondary-txt-cl);
+  }
 }
 
 .clos-icon {
-    width: 11px;
-    height: 11px;
+  width: 11px;
+  height: 11px;
 }
 
 .call-sabmit {
-    display: block;
+  display: block;
 
-    border: transparent;
-    margin-left: auto;
-    margin-right: auto;
+  border: transparent;
+  margin-left: auto;
+  margin-right: auto;
 
-    width: 200px;
-    height: 50px;
+  width: 200px;
+  height: 50px;
 
-    font-family: var(--main-font);
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
 
-    letter-spacing: 0.06em;
+  letter-spacing: 0.06em;
 
-    color: var(--accent-txt-cl);
-    background: var(--secondary-txt-cl);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
+  color: var(--accent-txt-cl);
+  background: var(--secondary-txt-cl);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
