@@ -1,97 +1,97 @@
 /*оформлєння інфо-блок*/
 .benefits {
-    width: $mobile;
+  width: $mobile;
+  @media screen and (min-width: $tablet) {
+    width: $tablet;
+  }
 }
 .benefits-list {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin: 0;
+  }
+
+  @media screen and (min-width: $desktop) {
+    flex-wrap: nowrap;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__item {
+    @media screen and (min-width: $mobile) {
+      width: 450px;
+    }
     @media screen and (min-width: $tablet) {
-        display: flex;
-        flex-wrap: wrap;
-        margin: -15px;
+      width: 354px;
+      margin: 15px;
     }
 
     @media screen and (min-width: $desktop) {
-        margin: 0;
+      width: 270px;
+      margin: 0;
     }
+  }
+
+  &__item:not(:last-child) {
+    @media screen and (min-width: $desktop) {
+      margin-right: 30px;
+    }
+  }
+  /*icon about*/
+  &__container {
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+    margin-bottom: 30px;
+
+    max-width: 450px;
+    height: 120px;
+    background: var(--section-bg-cl);
+    border-radius: 4px;
+
+    @media screen and (min-width: $tablet) {
+      width: 354px;
+    }
+    @media screen and (min-width: $desktop) {
+      width: 270px;
+    }
+  }
+
+  &__icon {
+    width: 70px;
+    height: 70px;
+  }
+
+  /*text about*/
+  &__title {
+    //min-width: 450px;
+    margin-bottom: 10px;
+
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    @media screen and (min-width: $tablet) {
+      text-align: left;
+    }
+  }
+
+  /*стили для блок описания*/
+  &__description {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    margin-bottom: 30px;
 
     @media screen and (min-width: $desktop) {
-        flex-wrap: nowrap;
-        margin-left: auto;
-        margin-right: auto;
+      margin-bottom: 0;
     }
-    
-    &__item {
-        @media screen and (min-width: $mobile) {
-            width: 450px;
-        }
-        @media screen and (min-width: $tablet) {
-            width: 354px;
-            margin: 15px;
-        }
-
-        @media screen and (min-width: $desktop) {
-            width: 270px;
-            margin: 0;
-
-        }
-    }
-
-    &__item:not(:last-child){
-        @media screen and (min-width: $desktop) {
-            margin-right: 30px;
-        }
-    }
-    /*icon about*/
-    &__container {
-        display: flex;
-        justify-content: center;
-    
-        align-items: center;
-        margin-bottom: 30px;
-
-        max-width: 450px;
-        height: 120px;
-        background: var(--section-bg-cl);
-        border-radius: 4px;
-
-        @media screen and (min-width: $tablet) {
-            width: 354px;
-        }
-        @media screen and (min-width: $desktop) {
-            width: 270px;
-        }
-    }
-    
-    &__icon {
-        width: 70px;
-        height: 70px;
-
-
-    }
-    
-    /*text about*/
-    &__title {
-        //min-width: 450px;
-        margin-bottom: 10px;
-    
-        font-size: 14px;
-        line-height: 1.14;
-        text-align: center;
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
-        @media screen and (min-width: $tablet){
-            text-align: left;
-        }
-    }
-    
-    /*стили для блок описания*/
-    &__description {
-        font-size: 14px;
-        line-height: 1.71;
-        letter-spacing: 0.03em;
-        margin-bottom: 30px;
-        
-        @media screen and (min-width: $desktop) {
-            margin-bottom: 0;
-        }
-    }
+  }
 }

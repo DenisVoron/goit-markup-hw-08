@@ -1,72 +1,96 @@
 /*блок герой*/
 .hero {
-    width: $mobile;
+  width: $mobile;
+  margin-left: auto;
+  margin-right: auto;
+
+  padding-top: 118px;
+  padding-bottom: 118px;
+
+  background-color: var(--main-bg-cl);
+
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero/hero-img_sm.png);
+
+  @include mq(retina) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero/hero-img_sm@2x.png);
+  }
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @media screen and (min-width: $tablet) {
+    width: $tablet;
+
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero/hero-img_md.png);
+
+    @include mq(retina) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/hero/hero-img_md@2x.png);
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    max-width: 1600px;
+    height: 600px;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero/hero-img_lg.png);
+
+    @include mq(retina) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/hero/hero-img_lg@2x.png);
+    }
+  }
+
+  &__title {
+    width: 360px;
     margin-left: auto;
     margin-right: auto;
-    
-    padding-top: 118px;
-    padding-bottom: 118px;
+    margin-bottom: 30px;
+    align-items: center;
 
-    background-color: var(--main-bg-cl);
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.62;
 
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/hero/hero-img_sm.png);
-        
-    @include mq(retina){
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../images/hero/hero-img_sm@2x.png);
-    }
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
 
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-
-    @media screen and (min-width: $tablet) {
-        max-width: $tablet;
-
-        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../images/hero/hero-img_md.png);
-
-        @include mq(retina) {
-        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../images/hero/hero-img_md@2x.png);
-        }   
-    }
+    color: var(--accent-txt-cl);
 
     @media screen and (min-width: $desktop) {
-        max-width: 1600px;
-        height: 600px;
-        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-                url(../images/hero/hero-img_lg.png);
-        
-                @include mq(retina) {
-                    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-                    url(../images/hero/hero-img_lg@2x.png);
-                }
-    }
+      width: 696px;
 
-    &__title {
-        width: 360px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 30px;
-        align-items: center;
-    
-        font-weight: 900;
-        font-size: 26px;
-        line-height: 1.62;
-    
-        text-align: center;
-        letter-spacing: 0.06em;
-        text-transform: uppercase;
-    
-        color: var(--accent-txt-cl);
-
-        @media screen and (min-width: $desktop) {
-            width: 696px;
-        
-            font-size: 44px;
-            line-height: 1.36;
-        }
+      font-size: 44px;
+      line-height: 1.36;
     }
+  }
 }

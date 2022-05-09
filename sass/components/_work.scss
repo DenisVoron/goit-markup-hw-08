@@ -1,106 +1,111 @@
 //секція робіт
 .work {
-    width: $mobile;
+  width: $mobile;
 
-    @media screen and (min-width: $tablet) {
-       width: $tablet;
-    }
+  @media screen and (min-width: $tablet) {
+    width: $tablet;
+  }
 
-    @media screen and (min-width: $desktop) {
-        width: $desktop;
-    }
+  @media screen and (min-width: $desktop) {
+    width: $desktop;
+  }
 }
 
 .list-pic {
-    margin-left: auto;
-    margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin: -15px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin: -15px;
+  }
+
+  &__item {
     @media screen and (min-width: $tablet) {
-        display: flex;
-        flex-wrap: wrap;
-
-        margin: -15px;
+      //width: 354px;
+      margin: 15px;
     }
+
     @media screen and (min-width: $desktop) {
-        margin: -15px;
+      //width: 370px;
+      flex-basis: calc((100% - 6 * 15px) / 3);
+      margin: 15px;
     }
+  }
 
-    &__item {
-        @media screen and (min-width: $tablet) {
-            width: 354px;
-            margin: 15px;
-        }
-
-        @media screen and (min-width: $desktop) {
-            //width: 370px;
-            flex-basis: calc((100% - 6 * 15px) / 3);
-            margin: 15px;
-        }
-
-        &__item:nth-child(3n) {
-            @media screen and (min-width: $desktop) {
-                margin-right: 0;
-            }
-        }
-        
-        &__item:nth-last-child(-n + 3) {
-            @media screen and (min-width: $desktop) {
-                margin-bottom: 0px;
-            }
-        }
+  &__item:not(:last-child) {
+    @media screen and (max-width: $tabletSecondary) {
+      margin-bottom: 30px;
     }
+  }
+
+  &__item:nth-child(3n) {
+    @media screen and (min-width: $desktop) {
+      margin-right: 0;
+    }
+  }
+
+  &__item:nth-last-child(-n + 3) {
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 0px;
+    }
+  }
 }
 
 .list-pic__link {
-    display: block;
+  display: block;
 
-    transition-property: box-shadow;
-    transition-duration: var(--time-change);
-    transition-timing-function: var(--time-steps);
-    transition-delay: 100ms;
+  transition-property: box-shadow;
+  transition-duration: var(--time-change);
+  transition-timing-function: var(--time-steps);
+  transition-delay: 100ms;
 
-    &:hover,
-    &:focus {
-        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
-            0px 4px 4px rgba(0, 0, 0, 0.06),
-            1px 4px 6px rgba(0, 0, 0, 0.16);
-    }
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
 }
 
 .work-text-wrapper {
-    padding-top: 20px;
-    padding-right: 24px;
-    padding-bottom: 20px;
-    padding-left: 24px;
+  padding-top: 20px;
+  padding-right: 24px;
+  padding-bottom: 20px;
+  padding-left: 24px;
 
-    background: var(--accent-txt-cl);
-    border-right: 1px solid var(--border-cl);
-    border-bottom: 1px solid var(--border-cl);
-    border-left: 1px solid var(--border-cl);
+  background: var(--accent-txt-cl);
+  border-right: 1px solid var(--border-cl);
+  border-bottom: 1px solid var(--border-cl);
+  border-left: 1px solid var(--border-cl);
 
-    @media screen and (min-width: $desktop) {
-        width: 370px;
-    }
+  @media screen and (min-width: $desktop) {
+    width: 370px;
+  }
 }
 
 /*цвет заголовков портфолио*/
 .work-title {
-    margin-bottom: 4px;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
+  margin-bottom: 4px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
 
-    letter-spacing: 0.06em;
+  letter-spacing: 0.06em;
 
-    color: var(--title-txt-cl);
+  color: var(--title-txt-cl);
 }
 
 /*описание работ*/
 .work-descr {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.87;
-    letter-spacing: 0.03em;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
 
-    color: var(--primary-txt-cl);
+  color: var(--primary-txt-cl);
 }

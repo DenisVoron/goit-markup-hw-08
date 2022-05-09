@@ -1,101 +1,103 @@
 /*секция команда*/
 .team {
-    width: $mobile;
-    
-    margin-left: auto;
-    margin-right: auto;
+  width: $mobile;
 
-    padding-top: 0px;
+  margin-left: auto;
+  margin-right: auto;
 
-    background-color: var(--section-bg-cl);
+  padding-top: 0px;
+
+  background-color: var(--section-bg-cl);
+
+  @media screen and (min-width: $tablet) {
+    width: $tablet;
+  }
 }
 
 .team-title {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 1.18;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.18;
 
-    text-align: center;
-    letter-spacing: 0.03em;
+  text-align: center;
+  letter-spacing: 0.03em;
 
-    color: var(--title-txt-cl);
+  color: var(--title-txt-cl);
 
-    @media screen and (min-width: $desktop) {
-        margin-bottom: 50px;
-        font-size: 36px;
-        line-height: 1.17;
-    }
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.17;
+  }
 }
 
 .team-list {
-    @media screen and (min-width: $tablet) {
-        display: flex;
-        flex-wrap: wrap;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
 
-        margin: -15px;
-    }
+    margin: -15px;
+  }
 
-    @media screen and (min-width: $desktop) {
-        flex-wrap: nowrap;
-        margin: 0px;
-    }
+  @media screen and (min-width: $desktop) {
+    flex-wrap: nowrap;
+    margin: 0px;
+  }
 }
 .team-list__item {
-    background-color: var(--accent-txt-cl);
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-        0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
+  background-color: var(--accent-txt-cl);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 
-    &:not(:last-child) {
-        @media screen and (min-width: $mobileSecondary) and (max-width: $mobile) {
-            margin-bottom: 30px;
-        }
+  &:not(:last-child) {
+    @media screen and (min-width: $mobileSecondary) and (max-width: $mobile) {
+      margin-bottom: 30px;
     }
-    
-    @media screen and (min-width: $tablet) and (max-width: $desktop) {
-        flex-basis: calc((100% - 4 * 15px) / 2);
-        margin: 15px;
-    }
+  }
 
-    &:not(:last-child){
-        @media screen and (min-width: $desktop) {
-            margin-right: 30px;
-        }
+  @media screen and (min-width: $tablet) and (max-width: $desktop) {
+    flex-basis: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
+
+  &:not(:last-child) {
+    @media screen and (min-width: $desktop) {
+      margin-right: 30px;
     }
+  }
 }
 
 .team-list__wrapper {
-    padding-top: 30px;
-    padding-bottom: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 
-    @media screen and (min-width: $tablet) {
-        padding-bottom: 24px;
-    }
-
+  @media screen and (min-width: $tablet) {
+    padding-bottom: 24px;
+  }
 }
 
 .team-list__title {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.19;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
 
-    text-align: center;
-    letter-spacing: 0.03em;
+  text-align: center;
+  letter-spacing: 0.03em;
 
-    color: var(--title-txt-cl);
+  color: var(--title-txt-cl);
 }
 
 .team-list__descr {
-    margin-bottom: 16px;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.19;
+  margin-bottom: 16px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
 
-    text-align: center;
-    letter-spacing: 0.03em;
-
+  text-align: center;
+  letter-spacing: 0.03em;
 }
