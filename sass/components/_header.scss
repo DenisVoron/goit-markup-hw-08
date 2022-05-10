@@ -29,7 +29,7 @@
     }
 
     @media screen and (min-width: $desktop) {
-      max-width: $desktop;
+      width: $desktop;
       justify-content: center;
     }
   }

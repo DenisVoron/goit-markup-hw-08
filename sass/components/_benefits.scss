@@ -4,6 +4,9 @@
   @media screen and (min-width: $tablet) {
     width: $tablet;
   }
+  @media screen and (min-width: $desktop) {
+    width: $desktop;
+  }
 }
 .benefits-list {
   @media screen and (min-width: $tablet) {
@@ -70,7 +73,6 @@
 
   /*text about*/
   &__title {
-    //min-width: 450px;
     margin-bottom: 10px;
 
     font-size: 14px;

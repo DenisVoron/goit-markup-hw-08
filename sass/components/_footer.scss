@@ -7,6 +7,14 @@
   margin-right: auto;
 
   background-color: var(--main-bg-cl);
+
+  @media screen and (min-width: $tablet) {
+    width: $tablet;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 100%;
+  }
 }
 
 .footer-container {
