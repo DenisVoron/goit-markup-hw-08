@@ -233,8 +233,8 @@ img {
     z-index: 20;
     top: 0;
     left: 0;
-    width: 480px;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     padding: 48px 40px;
@@ -260,6 +260,10 @@ img {
     letter-spacing: 0.02em;
     color: var(--title-txt-cl);
   }
+}
+
+.mobile-list__link:hover, .mobile-list__link:focus {
+  color: var(--secondary-txt-cl);
 }
 
 @media screen and (max-width: 767px) {
@@ -537,6 +541,7 @@ img {
 
 .contact-link__icon--phon {
   margin-right: 8px;
+  fill: currentColor;
   width: 10px;
   height: 14px;
 }
@@ -693,22 +698,9 @@ img {
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
-  max-width: 450px;
   height: 120px;
   background: var(--section-bg-cl);
   border-radius: 4px;
-}
-
-@media screen and (min-width: 768px) {
-  .benefits-list__container {
-    width: 354px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .benefits-list__container {
-    width: 270px;
-  }
 }
 
 .benefits-list__icon {
@@ -1000,14 +992,12 @@ img {
 }
 
 .client-item {
-  width: 210px;
   flex-basis: calc((100% - 4 * 15px) / 2);
   margin: 15px;
 }
 
 @media screen and (min-width: 768px) {
   .client-item {
-    width: 226px;
     flex-basis: calc((100% - 6 * 15px) / 3);
     margin: 15px;
   }
@@ -1015,7 +1005,6 @@ img {
 
 @media screen and (min-width: 1200px) {
   .client-item {
-    width: 170px;
     margin: 0;
   }
 }
@@ -1150,7 +1139,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .list-pic__item {
-    width: 354px;
+    flex-basis: calc((100% - 4 * 15px) / 2);
     margin: 15px;
   }
 }
@@ -1193,20 +1182,11 @@ img {
 }
 
 .work-text-wrapper {
-  padding-top: 20px;
-  padding-right: 24px;
-  padding-bottom: 20px;
-  padding-left: 24px;
+  padding: 20px 24px;
   background: var(--accent-txt-cl);
   border-right: 1px solid var(--border-cl);
   border-bottom: 1px solid var(--border-cl);
   border-left: 1px solid var(--border-cl);
-}
-
-@media screen and (min-width: 1200px) {
-  .work-text-wrapper {
-    width: 370px;
-  }
 }
 
 /*цвет заголовков портфолио*/

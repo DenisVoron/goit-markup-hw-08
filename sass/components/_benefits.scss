@@ -53,17 +53,9 @@
     align-items: center;
     margin-bottom: 30px;
 
-    max-width: 450px;
     height: 120px;
     background: var(--section-bg-cl);
     border-radius: 4px;
-
-    @media screen and (min-width: $tablet) {
-      width: 354px;
-    }
-    @media screen and (min-width: $desktop) {
-      width: 270px;
-    }
   }
 
   &__icon {
