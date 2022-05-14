@@ -16,7 +16,7 @@
   transition: transform var(--time-change) var(--time-steps);
 
   @media screen and (max-width: 460px) {
-    width: 310px;
+    width: 320px;
   }
 
   @media screen and (min-width: $desktop) {
