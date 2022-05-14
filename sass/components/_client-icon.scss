@@ -1,4 +1,9 @@
 .client-icon {
-    width: 106px;
-    height: 60px;
+  width: 106px;
+  height: 60px;
+
+  @media screen and (max-width: 425px) {
+    width: 91px;
+    height: 45px;
+  }
 }

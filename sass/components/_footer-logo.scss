@@ -1,23 +1,27 @@
 /*лого футер*/
 .container-logo {
-
-    margin-bottom: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
 }
 
 .footer-logo {
-    display: block;
-    font-family: var(--logo-font);
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 1.17;
+  display: block;
+  font-family: var(--logo-font);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
 
-    text-align: center;
-    letter-spacing: 0.03em;
+  text-align: center;
+  letter-spacing: 0.03em;
 
-    color: var(--secondary-txt-cl);
+  color: var(--secondary-txt-cl);
+
+  @media screen and (min-width: $desktop) {
+    text-align: left;
+  }
 }
 
 /*замена цвета лого*/
 .footer-logo-accent {
-    color: var(--accent-txt-cl);
+  color: var(--accent-txt-cl);
 }

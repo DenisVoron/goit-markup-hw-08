@@ -1,20 +1,11 @@
 /*футер*/
 .footer {
-  width: $mobile;
   padding-top: 60px;
   padding-bottom: 60px;
   margin-left: auto;
   margin-right: auto;
 
   background-color: var(--main-bg-cl);
-
-  @media screen and (min-width: $tablet) {
-    width: $tablet;
-  }
-
-  @media screen and (min-width: $desktop) {
-    width: 100%;
-  }
 }
 
 .footer-container {
@@ -62,6 +53,10 @@
   text-transform: uppercase;
 
   color: var(--accent-txt-cl);
+
+  @media screen and (min-width: $desktop) {
+    text-align: left;
+  }
 }
 
 .address-item {
@@ -93,6 +88,10 @@
 
   font-style: normal;
   color: var(--footer-txt-cl);
+
+  @media screen and (min-width: $desktop) {
+    text-align: left;
+  }
 }
 
 //посилання соц мережі

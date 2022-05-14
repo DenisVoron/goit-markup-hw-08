@@ -1,13 +1,4 @@
 /*оформлєння інфо-блок*/
-.benefits {
-  width: $mobile;
-  @media screen and (min-width: $tablet) {
-    width: $tablet;
-  }
-  @media screen and (min-width: $desktop) {
-    width: $desktop;
-  }
-}
 .benefits-list {
   @media screen and (min-width: $tablet) {
     display: flex;

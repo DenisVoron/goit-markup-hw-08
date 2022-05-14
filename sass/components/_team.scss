@@ -1,21 +1,9 @@
 /*секция команда*/
 .team {
-  width: $mobile;
-
   margin-left: auto;
   margin-right: auto;
 
-  padding-top: 0px;
-
   background-color: var(--section-bg-cl);
-
-  @media screen and (min-width: $tablet) {
-    width: $tablet;
-  }
-
-  @media screen and (min-width: $desktop) {
-    width: $desktop;
-  }
 }
 
 .team-title {
