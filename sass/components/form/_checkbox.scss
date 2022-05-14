@@ -22,6 +22,10 @@
   border-radius: 2px;
 
   fill: var(--accent-txt-cl);
+
+  @media screen and (max-width: $mobileModalSize) {
+    padding: 6px;
+  }
 }
 
 .agreement-label__checkbox:checked + .agreement-label__icon {
@@ -40,8 +44,8 @@
 
   color: var(--primary-txt-cl);
 
-  @media screen and (max-width: 460px) {
-    font-size: 9px;
+  @media screen and (max-width: $mobileModalSize) {
+    font-size: 11px;
   }
 
   @media screen and (min-width: $desktop) {

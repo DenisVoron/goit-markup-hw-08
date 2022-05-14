@@ -1508,7 +1508,7 @@ img {
 
 @media screen and (max-width: 460px) {
   .modal {
-    width: 320px;
+    width: 335px;
   }
 }
 
@@ -1599,7 +1599,6 @@ img {
 .agreement-label {
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 
 /*кнопка закриття модалки*/
@@ -1666,6 +1665,12 @@ img {
   fill: var(--accent-txt-cl);
 }
 
+@media screen and (max-width: 460px) {
+  .agreement-label__icon {
+    padding: 6px;
+  }
+}
+
 .agreement-label__checkbox:checked + .agreement-label__icon {
   background-color: var(--secondary-txt-cl);
   border-radius: 2px;
@@ -1683,7 +1688,7 @@ img {
 
 @media screen and (max-width: 460px) {
   .agreement-label__txt {
-    font-size: 9px;
+    font-size: 11px;
   }
 }
 

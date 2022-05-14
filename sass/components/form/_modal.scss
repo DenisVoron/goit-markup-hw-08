@@ -15,8 +15,8 @@
 
   transition: transform var(--time-change) var(--time-steps);
 
-  @media screen and (max-width: 460px) {
-    width: 320px;
+  @media screen and (max-width: $mobileModalSize) {
+    width: 335px;
   }
 
   @media screen and (min-width: $desktop) {
@@ -111,7 +111,6 @@
   &-label {
     display: flex;
     align-items: center;
-    justify-content: center;
   }
 }
 
