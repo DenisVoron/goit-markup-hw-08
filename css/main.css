@@ -1499,12 +1499,23 @@ img {
   top: 50%;
   left: 50%;
   width: 450px;
-  height: 609px;
   background-color: var(--accent-txt-cl);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transform: translate(-50%, -50%) scale(1);
   transition: transform var(--time-change) var(--time-steps);
+}
+
+@media screen and (max-width: 460px) {
+  .modal {
+    width: 310px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
 }
 
 .call-form {
@@ -1521,6 +1532,18 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-txt-cl);
+}
+
+@media screen and (max-width: 460px) {
+  .form-contents {
+    font-size: 17px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .form-contents {
+    line-height: 1.15;
+  }
 }
 
 .form-group {
@@ -1656,6 +1679,19 @@ img {
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--primary-txt-cl);
+}
+
+@media screen and (max-width: 460px) {
+  .agreement-label__txt {
+    font-size: 9px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .agreement-label__txt {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 textarea {
