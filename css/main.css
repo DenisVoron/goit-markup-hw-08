@@ -582,6 +582,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .hero {
+    height: 400px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-img_md.png);
   }
 }
@@ -595,6 +596,7 @@ img {
 @media screen and (min-width: 1200px) {
   .hero {
     max-width: 1600px;
+    height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-img_lg.png);
@@ -1665,12 +1667,6 @@ img {
   fill: var(--accent-txt-cl);
 }
 
-@media screen and (max-width: 460px) {
-  .agreement-label__icon {
-    padding: 6px;
-  }
-}
-
 .agreement-label__checkbox:checked + .agreement-label__icon {
   background-color: var(--secondary-txt-cl);
   border-radius: 2px;
@@ -1688,7 +1684,7 @@ img {
 
 @media screen and (max-width: 460px) {
   .agreement-label__txt {
-    font-size: 11px;
+    font-size: 10px;
   }
 }
 
