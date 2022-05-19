@@ -1196,6 +1196,12 @@ img {
   background: var(--overlay-color);
 }
 
+@media screen and (max-width: 430px) {
+  .overlay-thumb {
+    padding: 30px 24px;
+  }
+}
+
 .list-pic__link:hover .overlay-thumb,
 .list-pic__link:focus .overlay-thumb {
   transform: translateY(0);
@@ -1208,6 +1214,12 @@ img {
   line-height: 1.56;
   letter-spacing: 0.03em;
   color: var(--accent-txt-cl);
+}
+
+@media screen and (max-width: 430px) {
+  .overlay-thumb__txt {
+    font-size: 14px;
+  }
 }
 
 /*футер*/
